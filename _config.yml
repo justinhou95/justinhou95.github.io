@@ -10,7 +10,7 @@ baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/justinhou95/justinhou95.github.io.git" # you code repository
 
 # Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
+sidebar: false                           # whether or not using Sidebar.
 sidebar-about-description: "Just do it"
 sidebar-avatar: /img/ph.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
@@ -18,12 +18,12 @@ sidebar-avatar: /img/ph.jpg      # use absolute URL, seeing it's used in both `/
 
 # SNS settings
 RSS: false
-# weibo_username:     qiubaiying
-#zhihu_username:     qiubaiying
+# weibo_username:     
+#zhihu_username:     
 github_username:    justinhou95
-#facebook_username:  baiying.qiu.7
-#jianshu_username:   e71990ada2fd
-#twitter_username:   qiubaiying
+#facebook_username: 
+#jianshu_username:   
+#twitter_username:   
 
 
 
@@ -31,7 +31,7 @@ github_username:    justinhou95
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 permalink: pretty
-paginate: 10
+paginate: 2
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
@@ -86,7 +86,7 @@ ga_domain: auto               # 默认的是 auto, 这里我是自定义了的�
 
 # Featured Tags
 featured-tags: true                     # 是否使用首页标签
-featured-condition-size: 100             # 相同标签数量大于这个数，才会出现在首页
+featured-condition-size: 0             # 相同标签数量大于这个数，才会出现在首页
 
 
 

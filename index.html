@@ -1,24 +1,49 @@
 ---
 layout: page
-description: "Nothing is impossible"
+description: "The only thing certain is the uncertainty"
 ---
+
+<h1>
+        <font color = Teal  >   About me</font>
+</h1>
+Hi, I am Songyan Hou, a first year master student in applied mathematics in the department of
+mathematics at ETH, studying stochastic finance under the supervision of Prof. E. W. Farkas. Before coming to Zurich, I obtained my bechelor degree in mathematics in Nanjing University under the supervion of Prof. Zhang, Qiang on numerical methods of hyperbolic PDE. I was also an exchange student in UC Berkeley during 2013.
+<br><br>
+<a href="https://github.com/justinhou95"><img src="./img/git.jpg" height="30px" style="margin-bottom:-3px"></a>
+<a href="https://www.zhihu.com/"><img src="./img/zh.jpg" height="30px" style="margin-bottom:-3px"></a>
+<a href="https://www.researchgate.net/"><img src="./img/rg.JPG" height="30px" style="margin-bottom:-3px"> </a>
+<a href="https://scholar.google.com/"><img src="./img/gs.jpg" height="30px" style="margin-bottom:-3px"></a>
+<a href="https://twitter.com/"><img src="./img/tw.png" height="30px" style="margin-bottom:-3px"></a>
+<hr>
+<h1>
+        <font color = Teal >
+    Interests
+    </font>
+</h1>
+    I'm interested in Stochastic Finance and numerical methods implemented on
+    stochastic models. Currently I am mainly studying on the topics of arbitrage theory and numerical analysis of stochastic differential equations. Under the trend of machine learning, I am also interested in the application of deep artificial neural networks on solving stochastic differential equations. Besides, I am also working on numerical methods of hyperbolic equations such as WENO and discontinuous Galerkin methods. I hope to explore the potential of combination between machine learning with uncertain models, numerical methods of SDEs and traditional finite element methods.  
+<hr>
+<h1>
+<font color = Teal > Articles </font>
+</h1>
 
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
+        <h1 class="post-title" >
             {{ post.title }}
-        </h2>
+        </h1>
         {% if post.subtitle %}
-        <h3 class="post-subtitle">
+        <h4 class="post-subtitle">
             {{ post.subtitle }}
-        </h3>
+        </h4>
         {% endif %}
         <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
+                {{ post.abstract }}
+                <!-- {{ post.content | strip_html | truncate:200 }} -->
         </div>
     </a>
-    <p class="post-meta">
+    <p class="post-meta" >
         Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
     </p>
 </div>

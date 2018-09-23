@@ -1,10 +1,10 @@
 ---
 layout: page
-title: blog
-description: "Nothing is impossible"
+title: BLOG
+description: Talk is Cheap
 ---
 
-<h1>Latest Posts</h1>
+<!-- <h1>Latest Posts</h1>
 
 <ul>
   {% for post in site.posts %}
@@ -13,11 +13,12 @@ description: "Nothing is impossible"
       <p>{{ post.excerpt }}</p>
     </li>
   {% endfor %}
-</ul>
+</ul> -->
 
 
 
-{% for post in paginator.posts %}
+
+{% for post in site.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
@@ -39,18 +40,5 @@ description: "Nothing is impossible"
 <hr>
 {% endfor %}
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+
+
