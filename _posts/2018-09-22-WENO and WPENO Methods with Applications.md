@@ -4,7 +4,7 @@ title:      WENO and WPENO Methods with Applications
 subtitle:   
 date:       2018-09-22
 author:     Songyan Hou
-header-img: img/post-bg-ios9-web.jpg
+header-img: img/fd.png
 abstract: In this article we discuess two extension of essentially non-oscillatory methods, WENO method and WPENO method with their applications on conservation law. Both ofthem are designed to obtain high order of accuracy meanwhile maintaining the shock capturing features mainly for convection dominating equations. 
 catalog: true
 tags:
