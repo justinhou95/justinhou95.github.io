@@ -4,7 +4,7 @@ title:      Artificial Neural Networks
 subtitle:   
 date:       2019-02-15
 author:     Songyan Hou
-header-img: img/404-bg.jpg
+header-img: img/ANN.jpeg
 abstract: In this article, we give an introduction of the structures of artificial neural networks(ANNs), especially the rectified ANNs with analysis on operations between ANNs and show some concrete examples of ANNs.
 catalog: true
 tags:
@@ -92,7 +92,6 @@ and this can be obtain by introducing the following ANN
 and the it satisfies that 
 
 $$\mathcal{P}(\psi) \leq M^{2}\mathcal{P}(\phi_{1})$$
-
 ## 3.2. Composition of ANNs
 Given $\phi_{1}$ and $\phi_{2}$ two simple DNN such that $\mathcal{R}(\phi_{1}) \in C(\mathbb{R}^{d_{2}},\mathbb{R}^{d_{3}})$ and $\mathcal{R}(\phi_{2}) \in C(\mathbb{R}^{d_{1}},\mathbb{R}^{d_{2}})$. 
 ![My helpful screenshot](/img/ANN/ANN7.png)
@@ -118,11 +117,9 @@ However this is not a simple DNN because the green identity function in the midd
   \end{align*}
   $$
 
-  Assume there exists k such that $$ki \leq \min\{l_{1,1},l_{2,L_{2}-1}\} \leq \max\{l_{1,1},l_{2,L_{2}-1}\} \leq 2ki$$ where $k \geq 5$. Then er asdasda 
+  Assume there exists k such that $$ki \leq \min\{l_{1,1},l_{2,L_{2}-1}\} \leq \max\{l_{1,1},l_{2,L_{2}-1}\} \leq 2ki$$ where $k \geq 5$. Then 
 
-  ## 1. asdad
-
-    $$
+  $$
   \begin{align*}
     \mathcal{P}(\tilde{\psi}) - \mathcal{P}(\mathcal{\psi}) &\geq l_{1,1}l_{2,L_{2}-1} - i(l_{1,1}+l_{2,L_{2}-1}+i)\\
     &\geq k^2i^2 - i(4ki+i)\\
@@ -130,3 +127,58 @@ However this is not a simple DNN because the green identity function in the midd
     &\geq 4i^2 \\
   \end{align*}
   $$
+  So indeed this structure gives the same realization but with less degree in practice when the dimension of layers are much greater than the dimension of output. At the end, we can give a upper bound of the degree 
+
+  $$\mathcal{P}(\psi) \leq \max\{1,2^{-1}d_{2}^{-2}\mathcal{P}(I)\}(\mathcal{P}(\phi_{1})+\mathcal{P}(\phi_{2}))$$
+
+## 3.3. Euler Composition of ANNs
+  Let $$\phi_{1}$$ and $$\phi_{2}$$ be two ANNs both give the realization on $$C(\mathbb{R}^{d},\mathbb{R}^{d})$$. 
+  ![My helpful screenshot](/img/ANN/ANN12.png)
+  ![My helpful screenshot](/img/ANN/ANN13.png)
+  We hope to find a ANN $$\psi$$ which has the realization that 
+
+   $$\mathcal{R}(\psi) = \mathcal{R}(\phi_{1}) + \mathcal{R}(\phi_{2}) \circ \mathcal{R}(\phi_{1})$$
+
+  and we call this composition Euler composition. The reason why we are interested in such composition is because when we are considering an ODE
+  
+  $$u^{\prime} = f(u)$$
+
+  Then the Euler forward numerical method gives
+
+  $$ u_{t+1} = u_{t} + f(u_{t})$$
+
+  Thus if we represent $$u_{t}$$ and $$f(\cdot)$$ as a realization of $\phi_{1}$ and $\phi_{2}$, then we get
+
+  $$u_{t+1} = \mathcal{R}(\phi_{1}) + \mathcal{R}(\phi_{2}) \circ \mathcal{R}(\phi_{1})$$
+
+  There is no reason to do so in ODE because $u_{t}$ is not a function but in the case of SODE or PDE, $u_{t}$ is a random variable or function which explain why we need to approximate it with the realization of ANN. Now we come back to our job, to find a ANN $\psi$ with less degree such that 
+
+  $$\mathcal{R}(\psi) = \mathcal{R}(\phi_{1}) + \mathcal{R}(\phi_{2}) \circ \mathcal{R}(\phi_{1})$$
+
+  We construct it by using ANN $I$ of which the realization is the identity function to store the $\phi_{1}$ first and add it up at the very end.
+  ![My helpful screenshot](/img/ANN/ANN14.png)
+
+  So we construct the following the struture
+  ![My helpful screenshot](/img/ANN/ANN15.png)
+  We can use the trick before if the dimension of layer is much larger and similar computation gives that 
+
+  $$
+  \begin{align*}
+    \mathcal{P}(\tilde{\psi}) - \mathcal{P}(\mathcal{\psi}) &= (l_{2,1}+i)(l_{1,L_{1}-1}+1) - i(l_{1,L_{1}-1}+1) - (l_{2,1}+i)(i+1)\\
+    &= l_{2,1}l_{1,L_{1}-1} - i(l_{2,1}+1) - i^2
+  \end{align*}
+  $$
+
+  At the end, we can give a upper bound of the degree 
+
+  $$\mathcal{P}(\psi) \leq \mathcal{P}(\phi_{1}) + (\mathcal{P}(I)+\mathcal{P}(\phi_{2}))^{3}$$
+
+## 3.4. Representation of identity
+  Now, we give a concrete example of constructing a ANN $I$ of which the realization is the identity function. Let $I$ be a ANN with $$\mathcal{L}(I) =(1,2,1)$$ and  
+
+  $$W_{1} = \begin{bmatrix} 1 \\ -1 \end{bmatrix},\quad B_{1} = \begin{bmatrix} 0 \\ 0 \end{bmatrix},\quad W_{2} = \begin{bmatrix} 1 & -1 \end{bmatrix},\quad B_{1} = \begin{bmatrix} 0 & 0 \end{bmatrix}$$
+    ![My helpful screenshot](/img/ANN/ANN16.png)
+  Thus this ANN gives the identity function.
+# 4. Conclusion
+  From the complication of structure, it's reasonable to expect a great capacity of neural network to approximate a desired function. Actually it can do more than approximate a function but also approximate the solution of a SODE or PDE which will be one of the very impressive application of ANN, in this case, deep artificial neural network and this is going to be the topic of one of the coming blog in the future :).
+
