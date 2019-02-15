@@ -118,9 +118,12 @@ However this is not a simple DNN because the green identity function in the midd
   \end{align*}
   $$
 
-  Assume there exists k such that $$ki \leq \min\{l_{1,1},l_{2,L_{2}-1}\} \leq \max\{l_{1,1},l_{2,L_{2}-1}\} \leq 2ki$$ where $k \geq 5$. Then
+  Assume there exists k such that $$ki \leq \min\{l_{1,1},l_{2,L_{2}-1}\} \leq \max\{l_{1,1},l_{2,L_{2}-1}\} \leq 2ki$$ where $k \geq 5$. Then er asdasda 
 
-  $$
+  ## 1. asdad
+  sakjdslkskdkjkllsadjsadlajjjjjjjjjjjjj
+
+    $$
   \begin{align*}
     \mathcal{P}(\tilde{\psi}) - \mathcal{P}(\mathcal{\psi}) &\geq l_{1,1}l_{2,L_{2}-1} - i(l_{1,1}+l_{2,L_{2}-1}+i)\\
     &\geq k^2i^2 - i(4ki+i)\\
@@ -128,11 +131,3 @@ However this is not a simple DNN because the green identity function in the midd
     &\geq 4i^2 \\
   \end{align*}
   $$
-
-  ASDASD
-
-  ## 3.2. Composition of ANNs
-
-
-  ## 4.Conclusion
-  assad
