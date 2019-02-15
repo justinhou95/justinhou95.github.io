@@ -121,7 +121,6 @@ However this is not a simple DNN because the green identity function in the midd
   Assume there exists k such that $$ki \leq \min\{l_{1,1},l_{2,L_{2}-1}\} \leq \max\{l_{1,1},l_{2,L_{2}-1}\} \leq 2ki$$ where $k \geq 5$. Then er asdasda 
 
   ## 1. asdad
-  sakjdslkskdkjkllsadjsadlajjjjjjjjjjjjj
 
     $$
   \begin{align*}
