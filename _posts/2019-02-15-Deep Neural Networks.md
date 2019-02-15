@@ -40,7 +40,7 @@ the realization of $\phi$ is the function you get from the ANN structure $$\math
 
 $$\mathcal{R}(\phi)(x) = \mathcal{N}(x) = \Psi_{L} \circ \mathcal{A}_{l_{L},l_{L-1}} \circ \Psi_{L-1} \circ \mathcal{A}_{l_{L-1},l_{L-2}}\cdots \Psi_{1} \circ \mathcal{A}_{l_{1},l_{0}}(x)$$
 
-# 1. Activation functions
+# 2. Activation functions
 In general, activation functions $$\Psi_{k}$$ can be different functions in one ANN and they endow the ANN the nonlinear behavior. So now we started to introduce an important class of activation functions, namely the multidimensional versions.
 ### Rectifier function
 Bionic idea from real neural network of human being gives a natural activation functions called the rectifier function
@@ -79,8 +79,8 @@ $$m_{\phi,d}(x_{1},\cdots,x_{d}) = (\phi(x_{1}),\cdots,\phi(x_{d}))$$
 Sometimes we are interested in the ANN where all activation functions but the last one are a multidimensional version of the same real valued nonlinear function and the last one is the identity function because this model is sufficient to solve the problem. We call this simple ANN and call $\phi$ the basis activation function of this simple ANN. The following is an intuitive structure graph of the simple ANN.
 ![My helpful screenshot](/img/ANN/ANN4.png)
 
-# 2. Operations of ANNs
-## 1. Sums of DNNs with the same structure
+# 3. Operations of ANNs
+## 3.1. Sums of ANNs with the same structure
 Assume we have $M$ many simple ANN $\phi_{m}$ with the same structure i.e. same $l_{0},\cdots l_{L}$ and same basis activation function $a$.
 ![My helpful screenshot](/img/ANN/ANN5.png)
 We hope to construct a DNN $\psi$ use less degree and satisfies that 
@@ -93,7 +93,7 @@ and the it satisfies that
 
 $$\mathcal{P}(\psi) \leq M^{2}\mathcal{P}(\phi_{1})$$
 
-## 2. Composition of DNNs
+## 3.2. Composition of ANNs
 Given $\phi_{1}$ and $\phi_{2}$ two simple DNN such that $\mathcal{R}(\phi_{1}) \in C(\mathbb{R}^{d_{2}},\mathbb{R}^{d_{3}})$ and $\mathcal{R}(\phi_{2}) \in C(\mathbb{R}^{d_{1}},\mathbb{R}^{d_{2}})$. 
 ![My helpful screenshot](/img/ANN/ANN7.png)
 ![My helpful screenshot](/img/ANN/ANN8.png)
@@ -128,3 +128,11 @@ However this is not a simple DNN because the green identity function in the midd
     &\geq 4i^2 \\
   \end{align*}
   $$
+
+  ASDASD
+
+  ## 3.2. Composition of ANNs
+
+
+  ## 4.Conclusion
+  assad
