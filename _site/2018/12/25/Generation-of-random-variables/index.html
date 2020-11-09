@@ -188,9 +188,9 @@
             </div>
         </div>
     </div>
-
-
     <!-- mathjax config similar to math.stackexchange -->
+
+
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     jax: ["input/TeX", "output/HTML-CSS"],
@@ -203,6 +203,7 @@ MathJax.Hub.Config({
 });
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
 
 
 </header>
@@ -242,7 +243,7 @@ MultivariateNormal</p>
 <h1 id="3-matlab-code-and-realization">3. Matlab Code and Realization</h1>
 <p>In this section we present how to realize some simple distribution in practice.In our matlab realization, we use the pseudo random number generator function by default in matlab which gives a sequence of realization of pseudo random numbers which is not a sequence of real random numbers but gives the same statistic property and can be reproduced.</p>
 <h2 id="31-inversion-method">3.1. Inversion method</h2>
-<p>There are usually two steps in the inversion method. Firstly, compute the general inverse distribution function. Secondly, composite it with a $\mathcal{U}_{(0,1)}$-distributed random variable.</p>
+<p>There are usually two steps in the inversion method. Firstly, compute the general inverse distribution function. Secondly, composite it with a <script type="math/tex">\mathcal{U}_{(0,1)}</script>-distributed random variable.</p>
 <h3 id="exponential-distribution">Exponential distribution</h3>
 <div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">function</span> <span class="p">[</span><span class="n">X</span><span class="p">]</span> <span class="o">=</span> <span class="n">rand_exp</span><span class="p">(</span><span class="n">lambda</span><span class="p">,</span><span class="n">N</span><span class="p">)</span>
 <span class="n">U</span> <span class="o">=</span> <span class="nb">rand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="p">);</span>

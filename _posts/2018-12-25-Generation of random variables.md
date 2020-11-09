@@ -36,7 +36,7 @@ Because of the significance of normal distribution in many application of statis
 # 3. Matlab Code and Realization
 In this section we present how to realize some simple distribution in practice.In our matlab realization, we use the pseudo random number generator function by default in matlab which gives a sequence of realization of pseudo random numbers which is not a sequence of real random numbers but gives the same statistic property and can be reproduced.
 ## 3.1. Inversion method
-There are usually two steps in the inversion method. Firstly, compute the general inverse distribution function. Secondly, composite it with a $\mathcal{U}_{(0,1)}$-distributed random variable.
+There are usually two steps in the inversion method. Firstly, compute the general inverse distribution function. Secondly, composite it with a $$\mathcal{U}_{(0,1)}$$-distributed random variable.
 ### Exponential distribution
 ```matlab
 function [X] = rand_exp(lambda,N)

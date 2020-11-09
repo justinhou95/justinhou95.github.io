@@ -5,8 +5,8 @@
     <description>Every failure is leading towards success.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 09 Nov 2020 22:20:03 +0100</pubDate>
-    <lastBuildDate>Mon, 09 Nov 2020 22:20:03 +0100</lastBuildDate>
+    <pubDate>Mon, 09 Nov 2020 22:26:23 +0100</pubDate>
+    <lastBuildDate>Mon, 09 Nov 2020 22:26:23 +0100</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
@@ -68,26 +68,26 @@ ergodic control problem of fBM when no analytical solution is known or when the 
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{N} = \Psi_{L} \circ \mathcal{A}_{l_{L},l_{L-1}} \circ \Psi_{L-1} \circ \mathcal{A}_{l_{L-1},l_{L-2}}\cdots \Psi_{1} \circ \mathcal{A}_{l_{1},l_{0}}&lt;/script&gt;
 
-&lt;p&gt;where $\Psi_{k}\colon \mathbb{R}^{l_{k}} \to \mathbb{R}^{l_{k}}, k=1,\cdots,L$ is a function on $\mathbb{R}^{l_{k}}$ (called the activation functions) and &lt;script type=&quot;math/tex&quot;&gt;\mathcal{A}_{l_{k},l_{k-1}}\colon \mathbb{R}^{l_{k-1}} \to \mathbb{R}^{l_{k}}, k=1,\cdots,L&lt;/script&gt; is affine linear transformation from $\mathbb{R}^{l_{k-1}}$ to $\mathbb{R}^{l_{k}}$. Explicitly, we write for all &lt;script type=&quot;math/tex&quot;&gt;x\in \mathbb{R}^{l_{k-1}}&lt;/script&gt; that&lt;/p&gt;
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;\Psi_{k}\colon \mathbb{R}^{l_{k}} \to \mathbb{R}^{l_{k}}, k=1,\cdots,L&lt;/script&gt; is a function on &lt;script type=&quot;math/tex&quot;&gt;\mathbb{R}^{l_{k}}&lt;/script&gt; (called the activation functions) and &lt;script type=&quot;math/tex&quot;&gt;\mathcal{A}_{l_{k},l_{k-1}}\colon \mathbb{R}^{l_{k-1}} \to \mathbb{R}^{l_{k}}, k=1,\cdots,L&lt;/script&gt; is affine linear transformation from &lt;script type=&quot;math/tex&quot;&gt;\mathbb{R}^{l_{k-1}}&lt;/script&gt; to &lt;script type=&quot;math/tex&quot;&gt;\mathbb{R}^{l_{k}}&lt;/script&gt;. Explicitly, we write for all &lt;script type=&quot;math/tex&quot;&gt;x\in \mathbb{R}^{l_{k-1}}&lt;/script&gt; that&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{A}_{l_{k},l_{k-1}}(x) = W_{k}x + B_{k}&lt;/script&gt;
 
-&lt;p&gt;where $W_{k} \in \mathbb{R}^{l_{k}\times l_{k-1}}$ (called weight) and $B_{k} \in \mathbb{R}^{l_{k}}$ (called Bias)
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;W_{k} \in \mathbb{R}^{l_{k}\times l_{k-1}}&lt;/script&gt; (called weight) and &lt;script type=&quot;math/tex&quot;&gt;B_{k} \in \mathbb{R}^{l_{k}}&lt;/script&gt; (called Bias)
 &lt;img src=&quot;/img/ANN/ANN1.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;
-Here are 3 important index related to a ANN namely which are degree, layers and realization. Let $\phi$ be a ANN inheriting the structure and notation above.&lt;/p&gt;
+Here are 3 important index related to a ANN namely which are degree, layers and realization. Let &lt;script type=&quot;math/tex&quot;&gt;\phi&lt;/script&gt; be a ANN inheriting the structure and notation above.&lt;/p&gt;
 
 &lt;h3 id=&quot;degree&quot;&gt;Degree&lt;/h3&gt;
-&lt;p&gt;the degree of $\phi$ is the dimension of memory to store all the affine linear transformation given by&lt;/p&gt;
+&lt;p&gt;the degree of &lt;script type=&quot;math/tex&quot;&gt;\phi&lt;/script&gt; is the dimension of memory to store all the affine linear transformation given by&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{P}(\phi) = \sum_{k=1}^{L}l_{k}(l_{k-1}+1)&lt;/script&gt;
 
 &lt;h3 id=&quot;layer&quot;&gt;Layer&lt;/h3&gt;
-&lt;p&gt;the layer of $\phi$ is the vector of the dimension of all layers defined by&lt;/p&gt;
+&lt;p&gt;the layer of &lt;script type=&quot;math/tex&quot;&gt;\phi&lt;/script&gt; is the vector of the dimension of all layers defined by&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{L}(\phi) = (l_{0},\cdots,l_{L})&lt;/script&gt;
 
 &lt;h3 id=&quot;realization&quot;&gt;Realization&lt;/h3&gt;
-&lt;p&gt;the realization of $\phi$ is the function you get from the ANN structure &lt;script type=&quot;math/tex&quot;&gt;\mathcal{R}(\phi)\colon \mathbb{R}^{l_{0}} \to \mathbb{R}^{l_{L}}&lt;/script&gt; defined by&lt;/p&gt;
+&lt;p&gt;the realization of &lt;script type=&quot;math/tex&quot;&gt;\phi&lt;/script&gt; is the function you get from the ANN structure &lt;script type=&quot;math/tex&quot;&gt;\mathcal{R}(\phi)\colon \mathbb{R}^{l_{0}} \to \mathbb{R}^{l_{L}}&lt;/script&gt; defined by&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{R}(\phi)(x) = \mathcal{N}(x) = \Psi_{L} \circ \mathcal{A}_{l_{L},l_{L-1}} \circ \Psi_{L-1} \circ \mathcal{A}_{l_{L-1},l_{L-2}}\cdots \Psi_{1} \circ \mathcal{A}_{l_{1},l_{0}}(x)&lt;/script&gt;
 
@@ -124,15 +124,15 @@ Also notice that&lt;/p&gt;
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;r(x) = \int_{-\infty}^{x}h(t)dt&lt;/script&gt;
 
 &lt;h3 id=&quot;multidimensional-version&quot;&gt;Multidimensional version&lt;/h3&gt;
-&lt;p&gt;Since the activation function introduced above are from $\mathbb{R}$ to $\mathbb{R}$, we need a multidimensional version in order to use them under any dimension. The multidimensional version of a function $\phi\colon \mathbb{R} \to \mathbb{R}$ denoted by &lt;script type=&quot;math/tex&quot;&gt;m_{\phi,d}\colon \mathbb{R}^{d} \to \mathbb{R}^{d}&lt;/script&gt; is defined by&lt;/p&gt;
+&lt;p&gt;Since the activation function introduced above are from &lt;script type=&quot;math/tex&quot;&gt;\mathbb{R}&lt;/script&gt; to &lt;script type=&quot;math/tex&quot;&gt;\mathbb{R}&lt;/script&gt;, we need a multidimensional version in order to use them under any dimension. The multidimensional version of a function &lt;script type=&quot;math/tex&quot;&gt;\phi\colon \mathbb{R} \to \mathbb{R}&lt;/script&gt; denoted by &lt;script type=&quot;math/tex&quot;&gt;m_{\phi,d}\colon \mathbb{R}^{d} \to \mathbb{R}^{d}&lt;/script&gt; is defined by&lt;/p&gt;
 
 &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;m_{\phi,d}(x_{1},\cdots,x_{d}) = (\phi(x_{1}),\cdots,\phi(x_{d}))&lt;/script&gt;
-Sometimes we are interested in the ANN where all activation functions but the last one are a multidimensional version of the same real valued nonlinear function and the last one is the identity function because this model is sufficient to solve the problem. We call this simple ANN and call $\phi$ the basis activation function of this simple ANN. The following is an intuitive structure graph of the simple ANN.
+Sometimes we are interested in the ANN where all activation functions but the last one are a multidimensional version of the same real valued nonlinear function and the last one is the identity function because this model is sufficient to solve the problem. We call this simple ANN and call &lt;script type=&quot;math/tex&quot;&gt;\phi&lt;/script&gt; the basis activation function of this simple ANN. The following is an intuitive structure graph of the simple ANN.
 &lt;img src=&quot;/img/ANN/ANN4.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;3-operations-of-anns&quot;&gt;3. Operations of ANNs&lt;/h1&gt;
 &lt;h2 id=&quot;31-sums-of-anns-with-the-same-structure&quot;&gt;3.1. Sums of ANNs with the same structure&lt;/h2&gt;
-&lt;p&gt;Assume we have $M$ many simple ANN $\phi_{m}$ with the same structure i.e. same $l_{0},\cdots l_{L}$ and same basis activation function $a$.
+&lt;p&gt;Assume we have &lt;script type=&quot;math/tex&quot;&gt;M&lt;/script&gt; many simple ANN &lt;script type=&quot;math/tex&quot;&gt;\phi_{m}&lt;/script&gt; with the same structure i.e. same &lt;script type=&quot;math/tex&quot;&gt;l_{0},\cdots l_{L}&lt;/script&gt; and same basis activation function &lt;script type=&quot;math/tex&quot;&gt;a&lt;/script&gt;.
 &lt;img src=&quot;/img/ANN/ANN5.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;
 We hope to construct a DNN $\psi$ use less degree and satisfies that&lt;/p&gt;
 
@@ -144,10 +144,10 @@ and the it satisfies that&lt;/p&gt;
 
 &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\mathcal{P}(\psi) \leq M^{2}\mathcal{P}(\phi_{1})&lt;/script&gt;&lt;/p&gt;
 &lt;h2 id=&quot;32-composition-of-anns&quot;&gt;3.2. Composition of ANNs&lt;/h2&gt;
-&lt;p&gt;Given $\phi_{1}$ and $\phi_{2}$ two simple DNN such that $\mathcal{R}(\phi_{1}) \in C(\mathbb{R}^{d_{2}},\mathbb{R}^{d_{3}})$ and $\mathcal{R}(\phi_{2}) \in C(\mathbb{R}^{d_{1}},\mathbb{R}^{d_{2}})$. 
+&lt;p&gt;Given &lt;script type=&quot;math/tex&quot;&gt;\phi_{1}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\phi_{2}&lt;/script&gt; two simple DNN such that &lt;script type=&quot;math/tex&quot;&gt;\mathcal{R}(\phi_{1}) \in C(\mathbb{R}^{d_{2}},\mathbb{R}^{d_{3}})&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\mathcal{R}(\phi_{2}) \in C(\mathbb{R}^{d_{1}},\mathbb{R}^{d_{2}})&lt;/script&gt;. 
 &lt;img src=&quot;/img/ANN/ANN7.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;
 &lt;img src=&quot;/img/ANN/ANN8.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;
-We hope to define a $\psi$ with less degree such that&lt;/p&gt;
+We hope to define a &lt;script type=&quot;math/tex&quot;&gt;\psi&lt;/script&gt; with less degree such that&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{R}(\psi) = \mathcal{R}(\phi_{1}) \circ \mathcal{R}(\phi_{2})&lt;/script&gt;
 
@@ -155,9 +155,9 @@ We hope to define a $\psi$ with less degree such that&lt;/p&gt;
 &lt;img src=&quot;/img/ANN/ANN9.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;
 However this is not a simple DNN because the green identity function in the middle does not belong to the same multidimensional version activation functions class as the red ones. So we first think of that we should delete the bothering layer after the green identity function in the middle. Thus we come to the following structure
  &lt;img src=&quot;/img/ANN/ANN10.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;
- This solves the problem. However, in practice $d_{2}$ is usually greatly smaller than the dimension of layers so there is a smarter way avoid making the degree so high. Let $I$ be a DNN with layer $(d_{2},i,d_{2})$ (usually $i$ is as small as $d_{2}$ and $i=2d_{2}$ in the case of rectifier ANN) and the realization of $I$ is the identity function. We introduce the following structure 
+ This solves the problem. However, in practice &lt;script type=&quot;math/tex&quot;&gt;d_{2}&lt;/script&gt; is usually greatly smaller than the dimension of layers so there is a smarter way avoid making the degree so high. Let &lt;script type=&quot;math/tex&quot;&gt;I&lt;/script&gt; be a DNN with layer &lt;script type=&quot;math/tex&quot;&gt;(d_{2},i,d_{2})&lt;/script&gt; (usually &lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt; is as small as &lt;script type=&quot;math/tex&quot;&gt;d_{2}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;i=2d_{2}&lt;/script&gt; in the case of rectifier ANN) and the realization of &lt;script type=&quot;math/tex&quot;&gt;I&lt;/script&gt; is the identity function. We introduce the following structure 
   &lt;img src=&quot;/img/ANN/ANN11.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;
-  If we compute the difference of degree between $\psi$ and $\tilde{\psi}$ we have&lt;/p&gt;
+  If we compute the difference of degree between &lt;script type=&quot;math/tex&quot;&gt;\psi&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\tilde{\psi}&lt;/script&gt; we have&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
 \begin{align*}
@@ -167,7 +167,7 @@ However this is not a simple DNN because the green identity function in the midd
     &amp;\geq l_{1,1}l_{2,L_{2}-1} - i(l_{1,1}+l_{2,L_{2}-1}+i)\\
   \end{align*} %]]&gt;&lt;/script&gt;
 
-&lt;p&gt;Assume there exists k such that &lt;script type=&quot;math/tex&quot;&gt;ki \leq \min\{l_{1,1},l_{2,L_{2}-1}\} \leq \max\{l_{1,1},l_{2,L_{2}-1}\} \leq 2ki&lt;/script&gt; where $k \geq 5$. Then&lt;/p&gt;
+&lt;p&gt;Assume there exists k such that &lt;script type=&quot;math/tex&quot;&gt;ki \leq \min\{l_{1,1},l_{2,L_{2}-1}\} \leq \max\{l_{1,1},l_{2,L_{2}-1}\} \leq 2ki&lt;/script&gt; where &lt;script type=&quot;math/tex&quot;&gt;k \geq 5&lt;/script&gt;. Then&lt;/p&gt;
 
 &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
 \begin{align*}
@@ -196,15 +196,15 @@ However this is not a simple DNN because the green identity function in the midd
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;u_{t+1} = u_{t} + f(u_{t})&lt;/script&gt;
 
-&lt;p&gt;Thus if we represent &lt;script type=&quot;math/tex&quot;&gt;u_{t}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;f(\cdot)&lt;/script&gt; as a realization of $\phi_{1}$ and $\phi_{2}$, then we get&lt;/p&gt;
+&lt;p&gt;Thus if we represent &lt;script type=&quot;math/tex&quot;&gt;u_{t}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;f(\cdot)&lt;/script&gt; as a realization of &lt;script type=&quot;math/tex&quot;&gt;\phi_{1}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\phi_{2}&lt;/script&gt;, then we get&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;u_{t+1} = \mathcal{R}(\phi_{1}) + \mathcal{R}(\phi_{2}) \circ \mathcal{R}(\phi_{1})&lt;/script&gt;
 
-&lt;p&gt;There is no reason to do so in ODE because $u_{t}$ is not a function but in the case of SODE or PDE, $u_{t}$ is a random variable or function which explain why we need to approximate it with the realization of ANN. Now we come back to our job, to find a ANN $\psi$ with less degree such that&lt;/p&gt;
+&lt;p&gt;There is no reason to do so in ODE because &lt;script type=&quot;math/tex&quot;&gt;u_{t}&lt;/script&gt; is not a function but in the case of SODE or PDE, &lt;script type=&quot;math/tex&quot;&gt;u_{t}&lt;/script&gt; is a random variable or function which explain why we need to approximate it with the realization of ANN. Now we come back to our job, to find a ANN &lt;script type=&quot;math/tex&quot;&gt;\psi&lt;/script&gt; with less degree such that&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{R}(\psi) = \mathcal{R}(\phi_{1}) + \mathcal{R}(\phi_{2}) \circ \mathcal{R}(\phi_{1})&lt;/script&gt;
 
-&lt;p&gt;We construct it by using ANN $I$ of which the realization is the identity function to store the $\phi_{1}$ first and add it up at the very end.
+&lt;p&gt;We construct it by using ANN &lt;script type=&quot;math/tex&quot;&gt;I&lt;/script&gt; of which the realization is the identity function to store the &lt;script type=&quot;math/tex&quot;&gt;\phi_{1}&lt;/script&gt; first and add it up at the very end.
   &lt;img src=&quot;/img/ANN/ANN14.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;So we construct the following the struture
@@ -222,7 +222,7 @@ However this is not a simple DNN because the green identity function in the midd
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathcal{P}(\psi) \leq \mathcal{P}(\phi_{1}) + (\mathcal{P}(I)+\mathcal{P}(\phi_{2}))^{3}&lt;/script&gt;
 
 &lt;h2 id=&quot;34-representation-of-identity&quot;&gt;3.4. Representation of identity&lt;/h2&gt;
-&lt;p&gt;Now, we give a concrete example of constructing a ANN $I$ of which the realization is the identity function. Let $I$ be a ANN with &lt;script type=&quot;math/tex&quot;&gt;\mathcal{L}(I) =(1,2,1)&lt;/script&gt; and&lt;/p&gt;
+&lt;p&gt;Now, we give a concrete example of constructing a ANN &lt;script type=&quot;math/tex&quot;&gt;I&lt;/script&gt; of which the realization is the identity function. Let &lt;script type=&quot;math/tex&quot;&gt;I&lt;/script&gt; be a ANN with &lt;script type=&quot;math/tex&quot;&gt;\mathcal{L}(I) =(1,2,1)&lt;/script&gt; and&lt;/p&gt;
 
 &lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
 W_{1} = \begin{bmatrix} 1 \\ -1 \end{bmatrix},\quad B_{1} = \begin{bmatrix} 0 \\ 0 \end{bmatrix},\quad W_{2} = \begin{bmatrix} 1 &amp; -1 \end{bmatrix},\quad B_{1} = \begin{bmatrix} 0 &amp; 0 \end{bmatrix} %]]&gt;&lt;/script&gt;
@@ -267,7 +267,7 @@ MultivariateNormal&lt;/p&gt;
 &lt;h1 id=&quot;3-matlab-code-and-realization&quot;&gt;3. Matlab Code and Realization&lt;/h1&gt;
 &lt;p&gt;In this section we present how to realize some simple distribution in practice.In our matlab realization, we use the pseudo random number generator function by default in matlab which gives a sequence of realization of pseudo random numbers which is not a sequence of real random numbers but gives the same statistic property and can be reproduced.&lt;/p&gt;
 &lt;h2 id=&quot;31-inversion-method&quot;&gt;3.1. Inversion method&lt;/h2&gt;
-&lt;p&gt;There are usually two steps in the inversion method. Firstly, compute the general inverse distribution function. Secondly, composite it with a $\mathcal{U}_{(0,1)}$-distributed random variable.&lt;/p&gt;
+&lt;p&gt;There are usually two steps in the inversion method. Firstly, compute the general inverse distribution function. Secondly, composite it with a &lt;script type=&quot;math/tex&quot;&gt;\mathcal{U}_{(0,1)}&lt;/script&gt;-distributed random variable.&lt;/p&gt;
 &lt;h3 id=&quot;exponential-distribution&quot;&gt;Exponential distribution&lt;/h3&gt;
 &lt;div class=&quot;language-matlab highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rand_exp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lambda&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;U&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;rand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;

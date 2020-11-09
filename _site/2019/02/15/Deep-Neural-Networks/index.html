@@ -186,9 +186,9 @@
             </div>
         </div>
     </div>
-
-
     <!-- mathjax config similar to math.stackexchange -->
+
+
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     jax: ["input/TeX", "output/HTML-CSS"],
@@ -201,6 +201,7 @@ MathJax.Hub.Config({
 });
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
 
 
 </header>
@@ -222,26 +223,26 @@ MathJax.Hub.Config({
 
 <script type="math/tex; mode=display">\mathcal{N} = \Psi_{L} \circ \mathcal{A}_{l_{L},l_{L-1}} \circ \Psi_{L-1} \circ \mathcal{A}_{l_{L-1},l_{L-2}}\cdots \Psi_{1} \circ \mathcal{A}_{l_{1},l_{0}}</script>
 
-<p>where $\Psi_{k}\colon \mathbb{R}^{l_{k}} \to \mathbb{R}^{l_{k}}, k=1,\cdots,L$ is a function on $\mathbb{R}^{l_{k}}$ (called the activation functions) and <script type="math/tex">\mathcal{A}_{l_{k},l_{k-1}}\colon \mathbb{R}^{l_{k-1}} \to \mathbb{R}^{l_{k}}, k=1,\cdots,L</script> is affine linear transformation from $\mathbb{R}^{l_{k-1}}$ to $\mathbb{R}^{l_{k}}$. Explicitly, we write for all <script type="math/tex">x\in \mathbb{R}^{l_{k-1}}</script> that</p>
+<p>where <script type="math/tex">\Psi_{k}\colon \mathbb{R}^{l_{k}} \to \mathbb{R}^{l_{k}}, k=1,\cdots,L</script> is a function on <script type="math/tex">\mathbb{R}^{l_{k}}</script> (called the activation functions) and <script type="math/tex">\mathcal{A}_{l_{k},l_{k-1}}\colon \mathbb{R}^{l_{k-1}} \to \mathbb{R}^{l_{k}}, k=1,\cdots,L</script> is affine linear transformation from <script type="math/tex">\mathbb{R}^{l_{k-1}}</script> to <script type="math/tex">\mathbb{R}^{l_{k}}</script>. Explicitly, we write for all <script type="math/tex">x\in \mathbb{R}^{l_{k-1}}</script> that</p>
 
 <script type="math/tex; mode=display">\mathcal{A}_{l_{k},l_{k-1}}(x) = W_{k}x + B_{k}</script>
 
-<p>where $W_{k} \in \mathbb{R}^{l_{k}\times l_{k-1}}$ (called weight) and $B_{k} \in \mathbb{R}^{l_{k}}$ (called Bias)
+<p>where <script type="math/tex">W_{k} \in \mathbb{R}^{l_{k}\times l_{k-1}}</script> (called weight) and <script type="math/tex">B_{k} \in \mathbb{R}^{l_{k}}</script> (called Bias)
 <img src="/img/ANN/ANN1.png" alt="My helpful screenshot" />
-Here are 3 important index related to a ANN namely which are degree, layers and realization. Let $\phi$ be a ANN inheriting the structure and notation above.</p>
+Here are 3 important index related to a ANN namely which are degree, layers and realization. Let <script type="math/tex">\phi</script> be a ANN inheriting the structure and notation above.</p>
 
 <h3 id="degree">Degree</h3>
-<p>the degree of $\phi$ is the dimension of memory to store all the affine linear transformation given by</p>
+<p>the degree of <script type="math/tex">\phi</script> is the dimension of memory to store all the affine linear transformation given by</p>
 
 <script type="math/tex; mode=display">\mathcal{P}(\phi) = \sum_{k=1}^{L}l_{k}(l_{k-1}+1)</script>
 
 <h3 id="layer">Layer</h3>
-<p>the layer of $\phi$ is the vector of the dimension of all layers defined by</p>
+<p>the layer of <script type="math/tex">\phi</script> is the vector of the dimension of all layers defined by</p>
 
 <script type="math/tex; mode=display">\mathcal{L}(\phi) = (l_{0},\cdots,l_{L})</script>
 
 <h3 id="realization">Realization</h3>
-<p>the realization of $\phi$ is the function you get from the ANN structure <script type="math/tex">\mathcal{R}(\phi)\colon \mathbb{R}^{l_{0}} \to \mathbb{R}^{l_{L}}</script> defined by</p>
+<p>the realization of <script type="math/tex">\phi</script> is the function you get from the ANN structure <script type="math/tex">\mathcal{R}(\phi)\colon \mathbb{R}^{l_{0}} \to \mathbb{R}^{l_{L}}</script> defined by</p>
 
 <script type="math/tex; mode=display">\mathcal{R}(\phi)(x) = \mathcal{N}(x) = \Psi_{L} \circ \mathcal{A}_{l_{L},l_{L-1}} \circ \Psi_{L-1} \circ \mathcal{A}_{l_{L-1},l_{L-2}}\cdots \Psi_{1} \circ \mathcal{A}_{l_{1},l_{0}}(x)</script>
 
@@ -278,15 +279,15 @@ Also notice that</p>
 <script type="math/tex; mode=display">r(x) = \int_{-\infty}^{x}h(t)dt</script>
 
 <h3 id="multidimensional-version">Multidimensional version</h3>
-<p>Since the activation function introduced above are from $\mathbb{R}$ to $\mathbb{R}$, we need a multidimensional version in order to use them under any dimension. The multidimensional version of a function $\phi\colon \mathbb{R} \to \mathbb{R}$ denoted by <script type="math/tex">m_{\phi,d}\colon \mathbb{R}^{d} \to \mathbb{R}^{d}</script> is defined by</p>
+<p>Since the activation function introduced above are from <script type="math/tex">\mathbb{R}</script> to <script type="math/tex">\mathbb{R}</script>, we need a multidimensional version in order to use them under any dimension. The multidimensional version of a function <script type="math/tex">\phi\colon \mathbb{R} \to \mathbb{R}</script> denoted by <script type="math/tex">m_{\phi,d}\colon \mathbb{R}^{d} \to \mathbb{R}^{d}</script> is defined by</p>
 
 <p><script type="math/tex">m_{\phi,d}(x_{1},\cdots,x_{d}) = (\phi(x_{1}),\cdots,\phi(x_{d}))</script>
-Sometimes we are interested in the ANN where all activation functions but the last one are a multidimensional version of the same real valued nonlinear function and the last one is the identity function because this model is sufficient to solve the problem. We call this simple ANN and call $\phi$ the basis activation function of this simple ANN. The following is an intuitive structure graph of the simple ANN.
+Sometimes we are interested in the ANN where all activation functions but the last one are a multidimensional version of the same real valued nonlinear function and the last one is the identity function because this model is sufficient to solve the problem. We call this simple ANN and call <script type="math/tex">\phi</script> the basis activation function of this simple ANN. The following is an intuitive structure graph of the simple ANN.
 <img src="/img/ANN/ANN4.png" alt="My helpful screenshot" /></p>
 
 <h1 id="3-operations-of-anns">3. Operations of ANNs</h1>
 <h2 id="31-sums-of-anns-with-the-same-structure">3.1. Sums of ANNs with the same structure</h2>
-<p>Assume we have $M$ many simple ANN $\phi_{m}$ with the same structure i.e. same $l_{0},\cdots l_{L}$ and same basis activation function $a$.
+<p>Assume we have <script type="math/tex">M</script> many simple ANN <script type="math/tex">\phi_{m}</script> with the same structure i.e. same <script type="math/tex">l_{0},\cdots l_{L}</script> and same basis activation function <script type="math/tex">a</script>.
 <img src="/img/ANN/ANN5.png" alt="My helpful screenshot" />
 We hope to construct a DNN $\psi$ use less degree and satisfies that</p>
 
@@ -298,10 +299,10 @@ and the it satisfies that</p>
 
 <p><script type="math/tex">\mathcal{P}(\psi) \leq M^{2}\mathcal{P}(\phi_{1})</script></p>
 <h2 id="32-composition-of-anns">3.2. Composition of ANNs</h2>
-<p>Given $\phi_{1}$ and $\phi_{2}$ two simple DNN such that $\mathcal{R}(\phi_{1}) \in C(\mathbb{R}^{d_{2}},\mathbb{R}^{d_{3}})$ and $\mathcal{R}(\phi_{2}) \in C(\mathbb{R}^{d_{1}},\mathbb{R}^{d_{2}})$. 
+<p>Given <script type="math/tex">\phi_{1}</script> and <script type="math/tex">\phi_{2}</script> two simple DNN such that <script type="math/tex">\mathcal{R}(\phi_{1}) \in C(\mathbb{R}^{d_{2}},\mathbb{R}^{d_{3}})</script> and <script type="math/tex">\mathcal{R}(\phi_{2}) \in C(\mathbb{R}^{d_{1}},\mathbb{R}^{d_{2}})</script>. 
 <img src="/img/ANN/ANN7.png" alt="My helpful screenshot" />
 <img src="/img/ANN/ANN8.png" alt="My helpful screenshot" />
-We hope to define a $\psi$ with less degree such that</p>
+We hope to define a <script type="math/tex">\psi</script> with less degree such that</p>
 
 <script type="math/tex; mode=display">\mathcal{R}(\psi) = \mathcal{R}(\phi_{1}) \circ \mathcal{R}(\phi_{2})</script>
 
@@ -309,9 +310,9 @@ We hope to define a $\psi$ with less degree such that</p>
 <img src="/img/ANN/ANN9.png" alt="My helpful screenshot" />
 However this is not a simple DNN because the green identity function in the middle does not belong to the same multidimensional version activation functions class as the red ones. So we first think of that we should delete the bothering layer after the green identity function in the middle. Thus we come to the following structure
  <img src="/img/ANN/ANN10.png" alt="My helpful screenshot" />
- This solves the problem. However, in practice $d_{2}$ is usually greatly smaller than the dimension of layers so there is a smarter way avoid making the degree so high. Let $I$ be a DNN with layer $(d_{2},i,d_{2})$ (usually $i$ is as small as $d_{2}$ and $i=2d_{2}$ in the case of rectifier ANN) and the realization of $I$ is the identity function. We introduce the following structure 
+ This solves the problem. However, in practice <script type="math/tex">d_{2}</script> is usually greatly smaller than the dimension of layers so there is a smarter way avoid making the degree so high. Let <script type="math/tex">I</script> be a DNN with layer <script type="math/tex">(d_{2},i,d_{2})</script> (usually <script type="math/tex">i</script> is as small as <script type="math/tex">d_{2}</script> and <script type="math/tex">i=2d_{2}</script> in the case of rectifier ANN) and the realization of <script type="math/tex">I</script> is the identity function. We introduce the following structure 
   <img src="/img/ANN/ANN11.png" alt="My helpful screenshot" />
-  If we compute the difference of degree between $\psi$ and $\tilde{\psi}$ we have</p>
+  If we compute the difference of degree between <script type="math/tex">\psi</script> and <script type="math/tex">\tilde{\psi}</script> we have</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
 \begin{align*}
@@ -321,7 +322,7 @@ However this is not a simple DNN because the green identity function in the midd
     &\geq l_{1,1}l_{2,L_{2}-1} - i(l_{1,1}+l_{2,L_{2}-1}+i)\\
   \end{align*} %]]></script>
 
-<p>Assume there exists k such that <script type="math/tex">ki \leq \min\{l_{1,1},l_{2,L_{2}-1}\} \leq \max\{l_{1,1},l_{2,L_{2}-1}\} \leq 2ki</script> where $k \geq 5$. Then</p>
+<p>Assume there exists k such that <script type="math/tex">ki \leq \min\{l_{1,1},l_{2,L_{2}-1}\} \leq \max\{l_{1,1},l_{2,L_{2}-1}\} \leq 2ki</script> where <script type="math/tex">k \geq 5</script>. Then</p>
 
 <p><script type="math/tex">% <![CDATA[
 \begin{align*}
@@ -350,15 +351,15 @@ However this is not a simple DNN because the green identity function in the midd
 
 <script type="math/tex; mode=display">u_{t+1} = u_{t} + f(u_{t})</script>
 
-<p>Thus if we represent <script type="math/tex">u_{t}</script> and <script type="math/tex">f(\cdot)</script> as a realization of $\phi_{1}$ and $\phi_{2}$, then we get</p>
+<p>Thus if we represent <script type="math/tex">u_{t}</script> and <script type="math/tex">f(\cdot)</script> as a realization of <script type="math/tex">\phi_{1}</script> and <script type="math/tex">\phi_{2}</script>, then we get</p>
 
 <script type="math/tex; mode=display">u_{t+1} = \mathcal{R}(\phi_{1}) + \mathcal{R}(\phi_{2}) \circ \mathcal{R}(\phi_{1})</script>
 
-<p>There is no reason to do so in ODE because $u_{t}$ is not a function but in the case of SODE or PDE, $u_{t}$ is a random variable or function which explain why we need to approximate it with the realization of ANN. Now we come back to our job, to find a ANN $\psi$ with less degree such that</p>
+<p>There is no reason to do so in ODE because <script type="math/tex">u_{t}</script> is not a function but in the case of SODE or PDE, <script type="math/tex">u_{t}</script> is a random variable or function which explain why we need to approximate it with the realization of ANN. Now we come back to our job, to find a ANN <script type="math/tex">\psi</script> with less degree such that</p>
 
 <script type="math/tex; mode=display">\mathcal{R}(\psi) = \mathcal{R}(\phi_{1}) + \mathcal{R}(\phi_{2}) \circ \mathcal{R}(\phi_{1})</script>
 
-<p>We construct it by using ANN $I$ of which the realization is the identity function to store the $\phi_{1}$ first and add it up at the very end.
+<p>We construct it by using ANN <script type="math/tex">I</script> of which the realization is the identity function to store the <script type="math/tex">\phi_{1}</script> first and add it up at the very end.
   <img src="/img/ANN/ANN14.png" alt="My helpful screenshot" /></p>
 
 <p>So we construct the following the struture
@@ -376,7 +377,7 @@ However this is not a simple DNN because the green identity function in the midd
 <script type="math/tex; mode=display">\mathcal{P}(\psi) \leq \mathcal{P}(\phi_{1}) + (\mathcal{P}(I)+\mathcal{P}(\phi_{2}))^{3}</script>
 
 <h2 id="34-representation-of-identity">3.4. Representation of identity</h2>
-<p>Now, we give a concrete example of constructing a ANN $I$ of which the realization is the identity function. Let $I$ be a ANN with <script type="math/tex">\mathcal{L}(I) =(1,2,1)</script> and</p>
+<p>Now, we give a concrete example of constructing a ANN <script type="math/tex">I</script> of which the realization is the identity function. Let <script type="math/tex">I</script> be a ANN with <script type="math/tex">\mathcal{L}(I) =(1,2,1)</script> and</p>
 
 <p><script type="math/tex">% <![CDATA[
 W_{1} = \begin{bmatrix} 1 \\ -1 \end{bmatrix},\quad B_{1} = \begin{bmatrix} 0 \\ 0 \end{bmatrix},\quad W_{2} = \begin{bmatrix} 1 & -1 \end{bmatrix},\quad B_{1} = \begin{bmatrix} 0 & 0 \end{bmatrix} %]]></script>
