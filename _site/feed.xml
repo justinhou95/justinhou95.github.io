@@ -5,8 +5,8 @@
     <description>Every failure is leading towards success.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 09 Nov 2020 21:54:07 +0100</pubDate>
-    <lastBuildDate>Mon, 09 Nov 2020 21:54:07 +0100</lastBuildDate>
+    <pubDate>Mon, 09 Nov 2020 21:55:54 +0100</pubDate>
+    <lastBuildDate>Mon, 09 Nov 2020 21:55:54 +0100</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
@@ -530,7 +530,7 @@ MultivariateNormal&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
-&lt;p&gt;Dynkin’s Lemma, also called Dynkin’s &lt;script type=&quot;math/tex&quot;&gt;\pi&lt;/script&gt; Lemma, named by Eugene Dynkin, characterizes the situation when a Dynkin’s property is already valid on a &lt;script type=&quot;math/tex&quot;&gt;\pi&lt;/script&gt;-system, usually chosen to be generator of a desired &lt;script type=&quot;math/tex&quot;&gt;\sigma&lt;/script&gt;-algebra. Under this condition, the property is also true on a &lt;script type=&quot;math/tex&quot;&gt;\sigma&lt;/script&gt;-algebra which usually be the collection measurable sets &lt;script type=&quot;math/tex&quot;&gt;\mathcal{F}&lt;/script&gt; on a probability space&lt;script type=&quot;math/tex&quot;&gt;(\Omega,\mathcal{F},P)&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Dynkin’s Lemma, also called Dynkin’s $\pi$ Lemma, named by Eugene Dynkin, characterizes the situation when a Dynkin’s property is already valid on a $\pi$-system, usually chosen to be generator of a desired &lt;script type=&quot;math/tex&quot;&gt;\sigma&lt;/script&gt;-algebra. Under this condition, the property is also true on a $\sigma$-algebra which usually be the collection measurable sets $\mathcal{F}$ on a probability space$(\Omega,\mathcal{F},P)$&lt;/p&gt;
 
 &lt;h2 id=&quot;dynkins-lemma&quot;&gt;Dynkin’s lemma&lt;/h2&gt;
 
