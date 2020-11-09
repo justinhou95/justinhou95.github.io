@@ -14,7 +14,7 @@ tags:
 
 ## Introduction
 
-Dynkin's Lemma, also called Dynkin's $\pi$ Lemma, named by Eugene Dynkin, characterizes the situation when a Dynkin's property is already valid on a $\pi$-system, usually chosen to be generator of a desired $$\sigma$$-algebra. Under this condition, the property is also true on a $\sigma$-algebra which usually be the collection measurable sets $\mathcal{F}$ on a probability space$(\Omega,\mathcal{F},P)$
+Dynkin's Lemma, also called Dynkin's $$\pi$$ Lemma, named by Eugene Dynkin, characterizes the situation when a Dynkin's property is already valid on a $$\pi$$-system, usually chosen to be generator of a desired $$\sigma$$-algebra. Under this condition, the property is also true on a $$\sigma$$-algebra which usually be the collection measurable sets $$\mathcal{F}$$ on a probability space$$(\Omega,\mathcal{F},P)$$
 
 ## Dynkin's lemma
 
