@@ -3,10 +3,10 @@
   <channel>
     <title>Songyan Hou</title>
     <description>Every failure is leading towards success.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 09 Nov 2020 15:02:54 +0100</pubDate>
-    <lastBuildDate>Mon, 09 Nov 2020 15:02:54 +0100</lastBuildDate>
+    <link>http://justinhou95.github.io/</link>
+    <atom:link href="http://justinhou95.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 09 Nov 2020 20:49:45 +0100</pubDate>
+    <lastBuildDate>Mon, 09 Nov 2020 20:49:45 +0100</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
@@ -23,8 +23,8 @@ ergodic control problem of fBM when no analytical solution is known or when the 
 
 </description>
         <pubDate>Tue, 15 Sep 2020 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2020/09/15/Ergodic-control-of-fractional-Brownian-motion/</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/09/15/Ergodic-control-of-fractional-Brownian-motion/</guid>
+        <link>http://justinhou95.github.io/2020/09/15/Ergodic-control-of-fractional-Brownian-motion/</link>
+        <guid isPermaLink="true">http://justinhou95.github.io/2020/09/15/Ergodic-control-of-fractional-Brownian-motion/</guid>
         
         <category>Mathematical finance</category>
         
@@ -50,8 +50,8 @@ ergodic control problem of fBM when no analytical solution is known or when the 
 
 </description>
         <pubDate>Wed, 11 Dec 2019 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2019/12/11/Deep-Hedging/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/12/11/Deep-Hedging/</guid>
+        <link>http://justinhou95.github.io/2019/12/11/Deep-Hedging/</link>
+        <guid isPermaLink="true">http://justinhou95.github.io/2019/12/11/Deep-Hedging/</guid>
         
         <category>Mathematical finance</category>
         
@@ -233,8 +233,8 @@ W_{1} = \begin{bmatrix} 1 \\ -1 \end{bmatrix},\quad B_{1} = \begin{bmatrix} 0 \\
 
 </description>
         <pubDate>Fri, 15 Feb 2019 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2019/02/15/Deep-Neural-Networks/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/02/15/Deep-Neural-Networks/</guid>
+        <link>http://justinhou95.github.io/2019/02/15/Deep-Neural-Networks/</link>
+        <guid isPermaLink="true">http://justinhou95.github.io/2019/02/15/Deep-Neural-Networks/</guid>
         
         <category>Neural network</category>
         
@@ -514,8 +514,8 @@ MultivariateNormal&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 25 Dec 2018 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2018/12/25/Generation-of-random-variables/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/12/25/Generation-of-random-variables/</guid>
+        <link>http://justinhou95.github.io/2018/12/25/Generation-of-random-variables/</link>
+        <guid isPermaLink="true">http://justinhou95.github.io/2018/12/25/Generation-of-random-variables/</guid>
         
         <category>Probability theory</category>
         
@@ -582,8 +582,8 @@ MultivariateNormal&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 22 Sep 2018 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2018/09/22/Dynkin's-Lemma/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/09/22/Dynkin's-Lemma/</guid>
+        <link>http://justinhou95.github.io/2018/09/22/Dynkin's-Lemma/</link>
+        <guid isPermaLink="true">http://justinhou95.github.io/2018/09/22/Dynkin's-Lemma/</guid>
         
         <category>Probability theory</category>
         
@@ -600,8 +600,8 @@ MultivariateNormal&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/img/WENO and WPENO Methods with Applications/weno_ppt.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 22 Sep 2018 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/2018/09/22/WENO-and-WPENO-Methods-with-Applications/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/09/22/WENO-and-WPENO-Methods-with-Applications/</guid>
+        <link>http://justinhou95.github.io/2018/09/22/WENO-and-WPENO-Methods-with-Applications/</link>
+        <guid isPermaLink="true">http://justinhou95.github.io/2018/09/22/WENO-and-WPENO-Methods-with-Applications/</guid>
         
         <category>WENO</category>
         
