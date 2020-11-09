@@ -5,9 +5,60 @@
     <description>Every failure is leading towards success.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 29 Mar 2020 10:20:42 +0800</pubDate>
-    <lastBuildDate>Sun, 29 Mar 2020 10:20:42 +0800</lastBuildDate>
+    <pubDate>Mon, 09 Nov 2020 15:02:54 +0100</pubDate>
+    <lastBuildDate>Mon, 09 Nov 2020 15:02:54 +0100</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>Ergodic control of fractional Brownian motion</title>
+        <description>&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;In this paper, we introduce a new machine learning algorithm to solve the HJB equation of the corresponding ergodic control problem of the approximating OU processes. This method is invented based on the backward stochastic differential equation formulation of ergodic control problem and shows great potential solving
+ergodic control problem of fBM when no analytical solution is known or when the dimension of approximating process is large.&lt;/p&gt;
+
+&lt;h2 id=&quot;presentation-slides&quot;&gt;Presentation slides&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;/documents/fbm.pdf&quot;&gt;Slides could be found here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/fbm/fbm.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 15 Sep 2020 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2020/09/15/Ergodic-control-of-fractional-Brownian-motion/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/09/15/Ergodic-control-of-fractional-Brownian-motion/</guid>
+        
+        <category>Mathematical finance</category>
+        
+        <category>Neural network</category>
+        
+        <category>Rough model</category>
+        
+        <category>Numerical method</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Deep Hedging</title>
+        <description>&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;This is a course study report in Financial Engineering (Fall 2019) on the paper “Deep Hedging” by Hans Bühler, Lukas Gonon, Josef Teichmann, and Ben Woodfrom. We are very interested in how deep neural network can be applied in hedging problems. Therefore, we choose this paper for our course study project. Their approach expand our views on solving hedging problems beyond solving high dimensional PDEs, so we also invite readers of curiosities to take a look at it.&lt;/p&gt;
+
+&lt;h2 id=&quot;report&quot;&gt;Report&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;/documents/deep_hedge.pdf&quot;&gt;Slides could be found here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/Deep Hedge/deephedge_ppt.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 11 Dec 2019 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2019/12/11/Deep-Hedging/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/12/11/Deep-Hedging/</guid>
+        
+        <category>Mathematical finance</category>
+        
+        <category>Neural ntwork</category>
+        
+        
+      </item>
     
       <item>
         <title>Artificial Neural Networks</title>
@@ -181,11 +232,11 @@ W_{1} = \begin{bmatrix} 1 \\ -1 \end{bmatrix},\quad B_{1} = \begin{bmatrix} 0 \\
 &lt;p&gt;From the complication of structure, it’s reasonable to expect a great capacity of neural network to approximate a desired function. Actually it can do more than approximate a function but also approximate the solution of a SODE or PDE which will be one of the very impressive application of ANN, in this case, deep artificial neural network and this is going to be the topic of one of the coming blog in the future :).&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 15 Feb 2019 00:00:00 +0800</pubDate>
+        <pubDate>Fri, 15 Feb 2019 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/2019/02/15/Deep-Neural-Networks/</link>
         <guid isPermaLink="true">http://localhost:4000/2019/02/15/Deep-Neural-Networks/</guid>
         
-        <category>ANNs</category>
+        <category>Neural network</category>
         
         
       </item>
@@ -194,8 +245,7 @@ W_{1} = \begin{bmatrix} 1 \\ -1 \end{bmatrix},\quad B_{1} = \begin{bmatrix} 0 \\
         <title>Generators of random variables</title>
         <description>&lt;p&gt;In this article, we briefly summarize some generators of random variables introduced in the Notes of Numerical Analysis of Stochastic Differential Equations by Prof. Dr. Arnulf Jentzen and present the realization detail of some simple but commonly used distribution and attach the Matlab codes, most of which also come from the lecture note. This article act as a short summary of the content concerning on the generation of random variable in the lecture note.&lt;/p&gt;
 &lt;h1 id=&quot;1-generation-of-random-variables&quot;&gt;1. Generation of Random Variables&lt;/h1&gt;
-&lt;p&gt;Before answering the question how to generate an arbitrary random variable, a natural question is how to generate a Bernoulli distributed random variable? Tossing a coin is a good idea. In fact, there are numbers of random number generator based on certain physical experiments but for a general distributed random variable, the physical experiments may not be designed easily or might not realize efficiently. This can be one of the motivation of developing methods to generate random variable in a boarder stage with the elementary ones such as Bernoulli distributed denoted by &lt;script type=&quot;math/tex&quot;&gt;\text{Ber}_{p}&lt;/script&gt; or uniformly &lt;script type=&quot;math/tex&quot;&gt;(0,1)&lt;/script&gt; distributed denoted by &lt;script type=&quot;math/tex&quot;&gt;\mathcal{U}_{(0,1)}&lt;/script&gt; random variables. Because of the limitation of constructing continuous distribution with &lt;script type=&quot;math/tex&quot;&gt;\text{Ber}_{p}&lt;/script&gt;-distributed random variables, through this article we assume that we have a black box which can generate independent &lt;script type=&quot;math/tex&quot;&gt;\mathcal{U}_{(0,1)}&lt;/script&gt;-distributed random variables as many as we want.
-&lt;img src=&quot;/img/Generation of random variables/dice.jpg&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Before answering the question how to generate an arbitrary random variable, a natural question is how to generate a Bernoulli distributed random variable? Tossing a coin is a good idea. In fact, there are numbers of random number generator based on certain physical experiments but for a general distributed random variable, the physical experiments may not be designed easily or might not realize efficiently. This can be one of the motivation of developing methods to generate random variable in a boarder stage with the elementary ones such as Bernoulli distributed denoted by &lt;script type=&quot;math/tex&quot;&gt;\text{Ber}_{p}&lt;/script&gt; or uniformly &lt;script type=&quot;math/tex&quot;&gt;(0,1)&lt;/script&gt; distributed denoted by &lt;script type=&quot;math/tex&quot;&gt;\mathcal{U}_{(0,1)}&lt;/script&gt; random variables. Because of the limitation of constructing continuous distribution with &lt;script type=&quot;math/tex&quot;&gt;\text{Ber}_{p}&lt;/script&gt;-distributed random variables, through this article we assume that we have a black box which can generate independent &lt;script type=&quot;math/tex&quot;&gt;\mathcal{U}_{(0,1)}&lt;/script&gt;-distributed random variables as many as we want.&lt;/p&gt;
 &lt;h1 id=&quot;2-a-brief-introduction-of-methods&quot;&gt;2. A Brief Introduction of Methods&lt;/h1&gt;
 &lt;p&gt;In this first section we briefly introduce three types of generators of random variables. The introduction of methods all follow from the Lecture notes of Numerical Analysis of Stochastic Differential Equations by Prof. Dr. Arnulf Jentzen. Firstly, we present the inversion method which is a method accessible for general one dimensional distribution with explicit distribution function. Secondly, we introduce the acceptance-rejection method which helps to generate a uniform distribution on a complicated bounded domain. Also we focus on the application of the acceptance-rejection method on generate general multi-dimensional distribution with explicit density. Lastly, we present two methods: the Box-Muller method and the Masaglia method, which are designed for standard normal distribution based on the polar representation of the normal distribution. Furthermore, we discuss how to obtain a general normal distributed random variable by imposing a affine linear transformation on the standard one.&lt;/p&gt;
 &lt;h2 id=&quot;21-inversion-method&quot;&gt;2.1. Inversion method&lt;/h2&gt;
@@ -463,13 +513,13 @@ MultivariateNormal&lt;/p&gt;
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Tue, 25 Dec 2018 00:00:00 +0800</pubDate>
+        <pubDate>Tue, 25 Dec 2018 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/2018/12/25/Generation-of-random-variables/</link>
         <guid isPermaLink="true">http://localhost:4000/2018/12/25/Generation-of-random-variables/</guid>
         
-        <category>SDE</category>
+        <category>Probability theory</category>
         
-        <category>Numerical Analysis</category>
+        <category>Numerical method</category>
         
         
       </item>
@@ -480,7 +530,7 @@ MultivariateNormal&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
-&lt;p&gt;Dynkin’s Lemma, also called Dynkin’s &lt;script type=&quot;math/tex&quot;&gt;\pi&lt;/script&gt; Lemma, named by Eugene Dynkin, characterizes the situation when a Dynkin’s property is already valid on a &lt;script type=&quot;math/tex&quot;&gt;\pi&lt;/script&gt;-system, usually chosen to be generator of a desired &lt;script type=&quot;math/tex&quot;&gt;\sigma&lt;/script&gt;-algebra. Under this condition, the property is also true on a &lt;script type=&quot;math/tex&quot;&gt;\sigma&lt;/script&gt;-algebra which usually be the collection measuable sets &lt;script type=&quot;math/tex&quot;&gt;\mathcal{F}&lt;/script&gt; on a probability space&lt;script type=&quot;math/tex&quot;&gt;(\Omega,\mathcal{F},P)&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Dynkin’s Lemma, also called Dynkin’s &lt;script type=&quot;math/tex&quot;&gt;\pi&lt;/script&gt; Lemma, named by Eugene Dynkin, characterizes the situation when a Dynkin’s property is already valid on a &lt;script type=&quot;math/tex&quot;&gt;\pi&lt;/script&gt;-system, usually chosen to be generator of a desired &lt;script type=&quot;math/tex&quot;&gt;\sigma&lt;/script&gt;-algebra. Under this condition, the property is also true on a &lt;script type=&quot;math/tex&quot;&gt;\sigma&lt;/script&gt;-algebra which usually be the collection measurable sets &lt;script type=&quot;math/tex&quot;&gt;\mathcal{F}&lt;/script&gt; on a probability space&lt;script type=&quot;math/tex&quot;&gt;(\Omega,\mathcal{F},P)&lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;dynkins-lemma&quot;&gt;Dynkin’s lemma&lt;/h2&gt;
 
@@ -491,7 +541,7 @@ MultivariateNormal&lt;/p&gt;
 &lt;p&gt;Here we define Dynlin’s property in a slightly general way &lt;script type=&quot;math/tex&quot;&gt;i.e.&lt;/script&gt; &lt;script type=&quot;math/tex&quot;&gt;X&lt;/script&gt;-property where X can be any system, such as &lt;script type=&quot;math/tex&quot;&gt;\sigma&lt;/script&gt;-system, Dynkin system or &lt;script type=&quot;math/tex&quot;&gt;\pi&lt;/script&gt;-system.
 &lt;img src=&quot;/img/Dynkin's Lemma/Dynkin_property.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;In fact, Dynkin corollory here is nothing other than a restatement of Dynkin’s lemma, in which the Dynkin system is a system of set which satisfis certain property. However in the next section, we will the convenience and insight of this restatement.&lt;/p&gt;
+&lt;p&gt;In fact, Dynkin corollary here is nothing other than a restatement of Dynkin’s lemma, in which the Dynkin system is a system of set which satisfies certain property. However in the next section, we will the convenience and insight of this restatement.&lt;/p&gt;
 
 &lt;h2 id=&quot;application-to-the-probability-theory&quot;&gt;Application to the probability theory&lt;/h2&gt;
 
@@ -531,26 +581,31 @@ MultivariateNormal&lt;/p&gt;
 &lt;/ul&gt;
 
 </description>
-        <pubDate>Sat, 22 Sep 2018 00:00:00 +0800</pubDate>
+        <pubDate>Sat, 22 Sep 2018 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/2018/09/22/Dynkin's-Lemma/</link>
         <guid isPermaLink="true">http://localhost:4000/2018/09/22/Dynkin's-Lemma/</guid>
         
-        <category>Probability Theory</category>
+        <category>Probability theory</category>
         
         
       </item>
     
       <item>
         <title>WENO and WPENO Methods with Applications</title>
-        <description>&lt;p&gt;In this paper we discuess two extension of essentially non-oscillatory methods, WENO method and WPENO method with their applications on conservation law. Both of them are designed to obtain high order of accuracy meanwhile maintaining the shock capturing features mainly for convection dominating equations. Particularly, the WPENO method, based on an extended class of limiters substentially reduces the discotinuity semaring feature which lots of other schemes show in numerical experiments. We construct the fifth-order WENO method as well as the fifth-order WPENO method in two different ways, cell-averaging and flux-averaging. Furthermore, We discuess the difference and show the algorithm of both reconstruction procedure seperately in our numerical experiments. Additionally, the artifical flux sharpening technique as well as the shock locating technique are intoduced to both methods to reduce the discontinuity smearing features and unnecessary use of limiters . We present several numerical experiments including scalar and systems of conservation laws including linear advection, burgers’ equations and euler systems of gas dynamics and compare the numerical performance both on smooth reigons and the fierce ones.&lt;/p&gt;
+        <description>&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In this paper we discuss two extension of essentially non-oscillatory methods, WENO method and WPENO method with their applications on conservation law. Both of them are designed to obtain high order of accuracy meanwhile maintaining the shock capturing features mainly for convection dominating equations. Particularly, the WPENO method, based on an extended class of limiters substantially reduces the discontinuity smearing feature which lots of other schemes show in numerical experiments. We construct the fifth-order WENO method as well as the fifth-order WPENO method in two different ways, cell-averaging and flux-averaging. Furthermore, We discuss the difference and show the algorithm of both reconstruction procedure separately in our numerical experiments. Additionally, the artificial flux sharpening technique as well as the shock locating technique are introduced to both methods to reduce the discontinuity smearing features and unnecessary use of limiters . We present several numerical experiments including scalar and systems of conservation laws including linear advection, burgers’ equations and euler systems of gas dynamics and compare the numerical performance both on smooth regions and the fierce ones.&lt;/p&gt;
+&lt;h2 id=&quot;slides&quot;&gt;Slides&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;/documents/WENO.pdf&quot;&gt;Slides could be found here&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;……&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/WENO and WPENO Methods with Applications/weno_ppt.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sat, 22 Sep 2018 00:00:00 +0800</pubDate>
+        <pubDate>Sat, 22 Sep 2018 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/2018/09/22/WENO-and-WPENO-Methods-with-Applications/</link>
         <guid isPermaLink="true">http://localhost:4000/2018/09/22/WENO-and-WPENO-Methods-with-Applications/</guid>
         
         <category>WENO</category>
+        
+        <category>Numerical method</category>
         
         
       </item>

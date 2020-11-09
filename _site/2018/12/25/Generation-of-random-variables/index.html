@@ -173,9 +173,9 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/#SDE" title="SDE">SDE</a>
+                        <a class="tag" href="/tags/#Probability theory" title="Probability theory">Probability theory</a>
                         
-                        <a class="tag" href="/tags/#Numerical Analysis" title="Numerical Analysis">Numerical Analysis</a>
+                        <a class="tag" href="/tags/#Numerical method" title="Numerical method">Numerical method</a>
                         
                     </div>
                     <h1>Generators of random variables</h1>
@@ -220,8 +220,7 @@ MathJax.Hub.Config({
 
 				<p>In this article, we briefly summarize some generators of random variables introduced in the Notes of Numerical Analysis of Stochastic Differential Equations by Prof. Dr. Arnulf Jentzen and present the realization detail of some simple but commonly used distribution and attach the Matlab codes, most of which also come from the lecture note. This article act as a short summary of the content concerning on the generation of random variable in the lecture note.</p>
 <h1 id="1-generation-of-random-variables">1. Generation of Random Variables</h1>
-<p>Before answering the question how to generate an arbitrary random variable, a natural question is how to generate a Bernoulli distributed random variable? Tossing a coin is a good idea. In fact, there are numbers of random number generator based on certain physical experiments but for a general distributed random variable, the physical experiments may not be designed easily or might not realize efficiently. This can be one of the motivation of developing methods to generate random variable in a boarder stage with the elementary ones such as Bernoulli distributed denoted by <script type="math/tex">\text{Ber}_{p}</script> or uniformly <script type="math/tex">(0,1)</script> distributed denoted by <script type="math/tex">\mathcal{U}_{(0,1)}</script> random variables. Because of the limitation of constructing continuous distribution with <script type="math/tex">\text{Ber}_{p}</script>-distributed random variables, through this article we assume that we have a black box which can generate independent <script type="math/tex">\mathcal{U}_{(0,1)}</script>-distributed random variables as many as we want.
-<img src="/img/Generation of random variables/dice.jpg" alt="My helpful screenshot" /></p>
+<p>Before answering the question how to generate an arbitrary random variable, a natural question is how to generate a Bernoulli distributed random variable? Tossing a coin is a good idea. In fact, there are numbers of random number generator based on certain physical experiments but for a general distributed random variable, the physical experiments may not be designed easily or might not realize efficiently. This can be one of the motivation of developing methods to generate random variable in a boarder stage with the elementary ones such as Bernoulli distributed denoted by <script type="math/tex">\text{Ber}_{p}</script> or uniformly <script type="math/tex">(0,1)</script> distributed denoted by <script type="math/tex">\mathcal{U}_{(0,1)}</script> random variables. Because of the limitation of constructing continuous distribution with <script type="math/tex">\text{Ber}_{p}</script>-distributed random variables, through this article we assume that we have a black box which can generate independent <script type="math/tex">\mathcal{U}_{(0,1)}</script>-distributed random variables as many as we want.</p>
 <h1 id="2-a-brief-introduction-of-methods">2. A Brief Introduction of Methods</h1>
 <p>In this first section we briefly introduce three types of generators of random variables. The introduction of methods all follow from the Lecture notes of Numerical Analysis of Stochastic Differential Equations by Prof. Dr. Arnulf Jentzen. Firstly, we present the inversion method which is a method accessible for general one dimensional distribution with explicit distribution function. Secondly, we introduce the acceptance-rejection method which helps to generate a uniform distribution on a complicated bounded domain. Also we focus on the application of the acceptance-rejection method on generate general multi-dimensional distribution with explicit density. Lastly, we present two methods: the Box-Muller method and the Masaglia method, which are designed for standard normal distribution based on the polar representation of the normal distribution. Furthermore, we discuss how to obtain a general normal distributed random variable by imposing a affine linear transformation on the standard one.</p>
 <h2 id="21-inversion-method">2.1. Inversion method</h2>
@@ -552,26 +551,38 @@ MultivariateNormal</p>
                             
         				
                             
-                				<a href="/tags/#Probability Theory" title="Probability Theory" rel="1">
-                                    Probability Theory
+                				<a href="/tags/#Numerical method" title="Numerical method" rel="3">
+                                    Numerical method
                                 </a>
                             
         				
                             
-                				<a href="/tags/#SDE" title="SDE" rel="1">
-                                    SDE
+                				<a href="/tags/#Probability theory" title="Probability theory" rel="2">
+                                    Probability theory
                                 </a>
                             
         				
                             
-                				<a href="/tags/#Numerical Analysis" title="Numerical Analysis" rel="1">
-                                    Numerical Analysis
+                				<a href="/tags/#Neural network" title="Neural network" rel="2">
+                                    Neural network
                                 </a>
                             
         				
                             
-                				<a href="/tags/#ANNs" title="ANNs" rel="1">
-                                    ANNs
+                				<a href="/tags/#Mathematical finance" title="Mathematical finance" rel="2">
+                                    Mathematical finance
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#Neural ntwork" title="Neural ntwork" rel="1">
+                                    Neural ntwork
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#Rough model" title="Rough model" rel="1">
+                                    Rough model
                                 </a>
                             
         				

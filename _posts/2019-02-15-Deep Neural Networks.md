@@ -4,11 +4,11 @@ title:      Artificial Neural Networks
 subtitle:   
 date:       2019-02-15
 author:     Songyan Hou
-header-img: img/ANN.jpeg
+header-img: img/ANN.jpg
 abstract: In this article, we give an introduction of the structures of artificial neural networks(ANNs), especially the rectified ANNs with analysis on operations between ANNs and show some concrete examples of ANNs.
 catalog: true
 tags:
-    - ANNs
+    - Neural network
 ---
 Artificial Neural network is a significant function structure which has the capacity to realize a board range of functions and plays an important role in machine learning algorithm and function approximating theory. Application areas of ANNs include vehicle control, decision making, pattern recognition, medical diagnosis, financial applications, data mining and filtering problems. So in this blog, we would like to introduce the structure of ANNs and give some concrete examples.
 # 1. Structure of ANNs

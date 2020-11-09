@@ -5,16 +5,16 @@ subtitle:
 date:       2018-09-22
 author:     Songyan Hou
 header-img: img/Dynkin.jpg
-abstract: In this article we introduce Dynkin's Lemma with their application. In Dynkin's Lemma used proof, we define a so called Dynkin's property have an insight of what difficulty does Dynkin's Lemma really helps to overcome and under what condition Dynkin's lemma really help. Besides the use of a Dynkin's property language shorten the proof without repeating programized arguments of using Dynkin's Lemma.
+abstract: In this article we introduce Dynkin's Lemma with their application. In Dynkin's Lemma used proof, we define a so called Dynkin's property have an insight of what difficulty does Dynkin's Lemma really helps to overcome and under what condition Dynkin's lemma really help. Besides the use of a Dynkin's property language shorten the proof without repeating programmed arguments of using Dynkin's Lemma.
 catalog: true
 tags:
-    - Probability Theory
+    - Probability theory
 ---
 # Dynkin's Lemma with Applications
 
 ## Introduction
 
-Dynkin's Lemma, also called Dynkin's $$\pi$$ Lemma, named by Eugene Dynkin, characterizes the situation when a Dynkin's property is already valid on a $$\pi$$-system, usually chosen to be generator of a desired $$\sigma$$-algebra. Under this condition, the property is also true on a $$\sigma$$-algebra which usually be the collection measuable sets $$\mathcal{F}$$ on a probability space$$(\Omega,\mathcal{F},P)$$
+Dynkin's Lemma, also called Dynkin's $$\pi$$ Lemma, named by Eugene Dynkin, characterizes the situation when a Dynkin's property is already valid on a $$\pi$$-system, usually chosen to be generator of a desired $$\sigma$$-algebra. Under this condition, the property is also true on a $$\sigma$$-algebra which usually be the collection measurable sets $$\mathcal{F}$$ on a probability space$$(\Omega,\mathcal{F},P)$$
 
 ## Dynkin's lemma
 
@@ -25,7 +25,7 @@ Dynkin's Lemma, also called Dynkin's $$\pi$$ Lemma, named by Eugene Dynkin, char
 Here we define Dynlin's property in a slightly general way $$i.e.$$ $$X$$-property where X can be any system, such as $$\sigma$$-system, Dynkin system or $$\pi$$-system.
 ![My helpful screenshot](/img/Dynkin's Lemma/Dynkin_property.png)
 
-In fact, Dynkin corollory here is nothing other than a restatement of Dynkin's lemma, in which the Dynkin system is a system of set which satisfis certain property. However in the next section, we will the convenience and insight of this restatement.
+In fact, Dynkin corollary here is nothing other than a restatement of Dynkin's lemma, in which the Dynkin system is a system of set which satisfies certain property. However in the next section, we will the convenience and insight of this restatement.
 
 ## Application to the probability theory
 

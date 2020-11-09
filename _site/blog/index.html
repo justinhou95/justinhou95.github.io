@@ -179,6 +179,20 @@
 <ul>
   
     <li>
+      <h2><a href="/2020/09/15/Ergodic-control-of-fractional-Brownian-motion/">Ergodic control of fractional Brownian motion</a></h2>
+      <p><h2 id="introduction">Introduction</h2>
+
+</p>
+    </li>
+  
+    <li>
+      <h2><a href="/2019/12/11/Deep-Hedging/">Deep Hedging</a></h2>
+      <p><h2 id="introduction">Introduction</h2>
+
+</p>
+    </li>
+  
+    <li>
       <h2><a href="/2019/02/15/Deep-Neural-Networks/">Artificial Neural Networks</a></h2>
       <p><p>Artificial Neural network is a significant function structure which has the capacity to realize a board range of functions and plays an important role in machine learning algorithm and function approximating theory. Application areas of ANNs include vehicle control, decision making, pattern recognition, medical diagnosis, financial applications, data mining and filtering problems. So in this blog, we would like to introduce the structure of ANNs and give some concrete examples.</p>
 <h1 id="1-structure-of-anns">1. Structure of ANNs</h1>
@@ -191,8 +205,7 @@
       <h2><a href="/2018/12/25/Generation-of-random-variables/">Generators of random variables</a></h2>
       <p><p>In this article, we briefly summarize some generators of random variables introduced in the Notes of Numerical Analysis of Stochastic Differential Equations by Prof. Dr. Arnulf Jentzen and present the realization detail of some simple but commonly used distribution and attach the Matlab codes, most of which also come from the lecture note. This article act as a short summary of the content concerning on the generation of random variable in the lecture note.</p>
 <h1 id="1-generation-of-random-variables">1. Generation of Random Variables</h1>
-<p>Before answering the question how to generate an arbitrary random variable, a natural question is how to generate a Bernoulli distributed random variable? Tossing a coin is a good idea. In fact, there are numbers of random number generator based on certain physical experiments but for a general distributed random variable, the physical experiments may not be designed easily or might not realize efficiently. This can be one of the motivation of developing methods to generate random variable in a boarder stage with the elementary ones such as Bernoulli distributed denoted by <script type="math/tex">\text{Ber}_{p}</script> or uniformly <script type="math/tex">(0,1)</script> distributed denoted by <script type="math/tex">\mathcal{U}_{(0,1)}</script> random variables. Because of the limitation of constructing continuous distribution with <script type="math/tex">\text{Ber}_{p}</script>-distributed random variables, through this article we assume that we have a black box which can generate independent <script type="math/tex">\mathcal{U}_{(0,1)}</script>-distributed random variables as many as we want.
-<img src="/img/Generation of random variables/dice.jpg" alt="My helpful screenshot" /></p>
+<p>Before answering the question how to generate an arbitrary random variable, a natural question is how to generate a Bernoulli distributed random variable? Tossing a coin is a good idea. In fact, there are numbers of random number generator based on certain physical experiments but for a general distributed random variable, the physical experiments may not be designed easily or might not realize efficiently. This can be one of the motivation of developing methods to generate random variable in a boarder stage with the elementary ones such as Bernoulli distributed denoted by <script type="math/tex">\text{Ber}_{p}</script> or uniformly <script type="math/tex">(0,1)</script> distributed denoted by <script type="math/tex">\mathcal{U}_{(0,1)}</script> random variables. Because of the limitation of constructing continuous distribution with <script type="math/tex">\text{Ber}_{p}</script>-distributed random variables, through this article we assume that we have a black box which can generate independent <script type="math/tex">\mathcal{U}_{(0,1)}</script>-distributed random variables as many as we want.</p>
 <h1 id="2-a-brief-introduction-of-methods">2. A Brief Introduction of Methods</h1>
 <p>In this first section we briefly introduce three types of generators of random variables. The introduction of methods all follow from the Lecture notes of Numerical Analysis of Stochastic Differential Equations by Prof. Dr. Arnulf Jentzen. Firstly, we present the inversion method which is a method accessible for general one dimensional distribution with explicit distribution function. Secondly, we introduce the acceptance-rejection method which helps to generate a uniform distribution on a complicated bounded domain. Also we focus on the application of the acceptance-rejection method on generate general multi-dimensional distribution with explicit density. Lastly, we present two methods: the Box-Muller method and the Masaglia method, which are designed for standard normal distribution based on the polar representation of the normal distribution. Furthermore, we discuss how to obtain a general normal distributed random variable by imposing a affine linear transformation on the standard one.</p>
 <h2 id="21-inversion-method">2.1. Inversion method</h2>
@@ -461,7 +474,10 @@ MultivariateNormal</p>
   
     <li>
       <h2><a href="/2018/09/22/WENO-and-WPENO-Methods-with-Applications/">WENO and WPENO Methods with Applications</a></h2>
-      <p><p>In this paper we discuess two extension of essentially non-oscillatory methods, WENO method and WPENO method with their applications on conservation law. Both of them are designed to obtain high order of accuracy meanwhile maintaining the shock capturing features mainly for convection dominating equations. Particularly, the WPENO method, based on an extended class of limiters substentially reduces the discotinuity semaring feature which lots of other schemes show in numerical experiments. We construct the fifth-order WENO method as well as the fifth-order WPENO method in two different ways, cell-averaging and flux-averaging. Furthermore, We discuess the difference and show the algorithm of both reconstruction procedure seperately in our numerical experiments. Additionally, the artifical flux sharpening technique as well as the shock locating technique are intoduced to both methods to reduce the discontinuity smearing features and unnecessary use of limiters . We present several numerical experiments including scalar and systems of conservation laws including linear advection, burgers’ equations and euler systems of gas dynamics and compare the numerical performance both on smooth reigons and the fierce ones.</p>
+      <p><h2 id="introduction">Introduction</h2>
+<p>In this paper we discuss two extension of essentially non-oscillatory methods, WENO method and WPENO method with their applications on conservation law. Both of them are designed to obtain high order of accuracy meanwhile maintaining the shock capturing features mainly for convection dominating equations. Particularly, the WPENO method, based on an extended class of limiters substantially reduces the discontinuity smearing feature which lots of other schemes show in numerical experiments. We construct the fifth-order WENO method as well as the fifth-order WPENO method in two different ways, cell-averaging and flux-averaging. Furthermore, We discuss the difference and show the algorithm of both reconstruction procedure separately in our numerical experiments. Additionally, the artificial flux sharpening technique as well as the shock locating technique are introduced to both methods to reduce the discontinuity smearing features and unnecessary use of limiters . We present several numerical experiments including scalar and systems of conservation laws including linear advection, burgers’ equations and euler systems of gas dynamics and compare the numerical performance both on smooth regions and the fierce ones.</p>
+<h2 id="slides">Slides</h2>
+<p><a href="/documents/WENO.pdf">Slides could be found here</a></p>
 
 </p>
     </li>
@@ -471,6 +487,42 @@ MultivariateNormal</p>
 
 
 
+
+<div class="post-preview">
+    <a href="/2020/09/15/Ergodic-control-of-fractional-Brownian-motion/">
+        <h2 class="post-title">
+            Ergodic control of fractional Brownian motion
+        </h2>
+        
+        <div class="post-content-preview">
+            Introduction
+
+In this paper, we introduce a new machine learning algorithm to solve the HJB equation of the corresponding ergodic control problem of the approximating OU processes. This method is i...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Songyan Hou on September 15, 2020
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2019/12/11/Deep-Hedging/">
+        <h2 class="post-title">
+            Deep Hedging
+        </h2>
+        
+        <div class="post-content-preview">
+            Introduction
+
+This is a course study report in Financial Engineering (Fall 2019) on the paper “Deep Hedging” by Hans Bühler, Lukas Gonon, Josef Teichmann, and Ben Woodfrom. We are very interested i...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by Songyan Hou & Yihan Chen on December 11, 2019
+    </p>
+</div>
+<hr>
 
 <div class="post-preview">
     <a href="/2019/02/15/Deep-Neural-Networks/">
@@ -531,7 +583,8 @@ Dynkin’s Lemma, also called Dynkin’s  Lemma, named by Eugene Dynkin, charact
         </h2>
         
         <div class="post-content-preview">
-            In this paper we discuess two extension of essentially non-oscillatory methods, WENO method and WPENO method with their applications on conservation law. Both of them are designed to obtain high or...
+            Introduction
+In this paper we discuss two extension of essentially non-oscillatory methods, WENO method and WPENO method with their applications on conservation law. Both of them are designed to ob...
         </div>
     </a>
     <p class="post-meta">
@@ -565,26 +618,38 @@ Dynkin’s Lemma, also called Dynkin’s  Lemma, named by Eugene Dynkin, charact
                             
         				
                             
-                				<a href="/tags/#Probability Theory" title="Probability Theory" rel="1">
-                                    Probability Theory
+                				<a href="/tags/#Numerical method" title="Numerical method" rel="3">
+                                    Numerical method
                                 </a>
                             
         				
                             
-                				<a href="/tags/#SDE" title="SDE" rel="1">
-                                    SDE
+                				<a href="/tags/#Probability theory" title="Probability theory" rel="2">
+                                    Probability theory
                                 </a>
                             
         				
                             
-                				<a href="/tags/#Numerical Analysis" title="Numerical Analysis" rel="1">
-                                    Numerical Analysis
+                				<a href="/tags/#Neural network" title="Neural network" rel="2">
+                                    Neural network
                                 </a>
                             
         				
                             
-                				<a href="/tags/#ANNs" title="ANNs" rel="1">
-                                    ANNs
+                				<a href="/tags/#Mathematical finance" title="Mathematical finance" rel="2">
+                                    Mathematical finance
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#Neural ntwork" title="Neural ntwork" rel="1">
+                                    Neural ntwork
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#Rough model" title="Rough model" rel="1">
+                                    Rough model
                                 </a>
                             
         				

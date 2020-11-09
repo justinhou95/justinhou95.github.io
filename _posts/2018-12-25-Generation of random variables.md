@@ -9,13 +9,12 @@ abstract: In this article, we briefly introduce some generators of random variab
 
 catalog: true
 tags:
-    - SDE
-    - Numerical Analysis
+    - Probability theory
+    - Numerical method
 ---
 In this article, we briefly summarize some generators of random variables introduced in the Notes of Numerical Analysis of Stochastic Differential Equations by Prof. Dr. Arnulf Jentzen and present the realization detail of some simple but commonly used distribution and attach the Matlab codes, most of which also come from the lecture note. This article act as a short summary of the content concerning on the generation of random variable in the lecture note.
 # 1. Generation of Random Variables
 Before answering the question how to generate an arbitrary random variable, a natural question is how to generate a Bernoulli distributed random variable? Tossing a coin is a good idea. In fact, there are numbers of random number generator based on certain physical experiments but for a general distributed random variable, the physical experiments may not be designed easily or might not realize efficiently. This can be one of the motivation of developing methods to generate random variable in a boarder stage with the elementary ones such as Bernoulli distributed denoted by $$\text{Ber}_{p}$$ or uniformly $$(0,1)$$ distributed denoted by $$\mathcal{U}_{(0,1)}$$ random variables. Because of the limitation of constructing continuous distribution with $$\text{Ber}_{p}$$-distributed random variables, through this article we assume that we have a black box which can generate independent $$\mathcal{U}_{(0,1)}$$-distributed random variables as many as we want.
-![My helpful screenshot](/img/Generation of random variables/dice.jpg)
 # 2. A Brief Introduction of Methods
 In this first section we briefly introduce three types of generators of random variables. The introduction of methods all follow from the Lecture notes of Numerical Analysis of Stochastic Differential Equations by Prof. Dr. Arnulf Jentzen. Firstly, we present the inversion method which is a method accessible for general one dimensional distribution with explicit distribution function. Secondly, we introduce the acceptance-rejection method which helps to generate a uniform distribution on a complicated bounded domain. Also we focus on the application of the acceptance-rejection method on generate general multi-dimensional distribution with explicit density. Lastly, we present two methods: the Box-Muller method and the Masaglia method, which are designed for standard normal distribution based on the polar representation of the normal distribution. Furthermore, we discuss how to obtain a general normal distributed random variable by imposing a affine linear transformation on the standard one.
 ## 2.1. Inversion method
