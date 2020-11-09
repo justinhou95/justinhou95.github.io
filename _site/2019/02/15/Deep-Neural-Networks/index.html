@@ -203,13 +203,9 @@ MathJax.Hub.Config({
 });
 </script>
     
-<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script> -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
-<script type="text/javascript" charset="utf-8"
-    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-<script type="text/javascript" charset="utf-8" src="https://vincenttam.github.io/javascripts/MathJaxLocal.js">
-</script>
+
 
 
 
@@ -243,7 +239,7 @@ MathJax.Hub.Config({
 <h1 id="1-structure-of-anns">1. Structure of ANNs</h1>
 <p>An artificial neural network is a structure to produce a function which is alternately compositions of affine linear transformations and activation functions. We should keep in mind that ANN is nothing other than a structure or a graph and the function produced by it is called the realization of this ANN.</p>
 
-<p>$ \mathcal{N} = \Psi_{L} \circ \mathcal{A}<em>{l</em>{L},l_{L-1}} \circ \Psi_{L-1} \circ \mathcal{A}<em>{l</em>{L-1},l_{L-2}}\cdots \Psi_{1} \circ \mathcal{A}<em>{l</em>{1},l_{0}}$</p>
+<script type="math/tex; mode=display">\mathcal{N} = \Psi_{L} \circ \mathcal{A}_{l_{L},l_{L-1}} \circ \Psi_{L-1} \circ \mathcal{A}_{l_{L-1},l_{L-2}}\cdots \Psi_{1} \circ \mathcal{A}_{l_{1},l_{0}}</script>
 
 <p>where $\Psi_{k}\colon \mathbb{R}^{l_{k}} \to \mathbb{R}^{l_{k}}, k=1,\cdots,L$ is a function on $\mathbb{R}^{l_{k}}$ (called the activation functions) and <script type="math/tex">\mathcal{A}_{l_{k},l_{k-1}}\colon \mathbb{R}^{l_{k-1}} \to \mathbb{R}^{l_{k}}, k=1,\cdots,L</script> is affine linear transformation from $\mathbb{R}^{l_{k-1}}$ to $\mathbb{R}^{l_{k}}$. Explicitly, we write for all <script type="math/tex">x\in \mathbb{R}^{l_{k-1}}</script> that</p>
 
