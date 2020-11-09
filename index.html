@@ -7,14 +7,14 @@ description: "The only thing certain is the uncertainty"
         <font color = Teal  >   About me </font>
 </h1>
 Hi, I am Songyan Hou, an applied math master student in ETH, currently working on my master thesis on machine learning in finance under the supervision of Prof. Josef Teichmann. Before coming to Zurich, I obtained my bachelor degree in mathematics in Nanjing University under the supervision of Prof. Zhang, Qiang on numerical methods of PDEs.
-<br><br>
+<!-- <br><br>
 <a href="https://github.com/justinhou95"><img src="./img/git.jpg" height="30px" style="margin-bottom:-3px"></a>
 <a href="https://www.researchgate.net/"><img src="./img/rg.JPG" height="30px" style="margin-bottom:-3px"> </a>
 <a href="https://scholar.google.com/"><img src="./img/gs.jpg" height="30px" style="margin-bottom:-3px"></a>
-<a href="https://twitter.com/"><img src="./img/tw.png" height="30px" style="margin-bottom:-3px"></a>
+<a href="https://twitter.com/"><img src="./img/tw.png" height="30px" style="margin-bottom:-3px"></a> -->
 <hr>
 <h1>
-        <font color = Teal >
+    <font color = Teal >
     Interests
     </font>
 </h1>
@@ -25,7 +25,7 @@ Hi, I am Songyan Hou, an applied math master student in ETH, currently working o
 <font color = Teal > Blogs </font>
 </h1>
 
-{% for post in paginator.posts %}
+{% for post in site.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h1 class="post-title" >
@@ -49,7 +49,7 @@ Hi, I am Songyan Hou, an applied math master student in ETH, currently working o
 {% endfor %}
 
 <!-- Pager -->
-{% if paginator.total_pages > 1 %}
+<!-- {% if paginator.total_pages > 1 %}
 <ul class="pager">
     {% if paginator.previous_page %}
     <li class="previous">
@@ -62,4 +62,4 @@ Hi, I am Songyan Hou, an applied math master student in ETH, currently working o
     </li>
     {% endif %}
 </ul>
-{% endif %}
+{% endif %} -->
