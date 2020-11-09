@@ -14,9 +14,9 @@ Artificial Neural network is a significant function structure which has the capa
 # 1. Structure of ANNs
 An artificial neural network is a structure to produce a function which is alternately compositions of affine linear transformations and activation functions. We should keep in mind that ANN is nothing other than a structure or a graph and the function produced by it is called the realization of this ANN.
 
-$$ \mathcal{N} = \Psi_{L} \circ \mathcal{A}_{l_{L},l_{L-1}} \circ \Psi_{L-1} \circ \mathcal{A}_{l_{L-1},l_{L-2}}\cdots \Psi_{1} \circ \mathcal{A}_{l_{1},l_{0}}$$
+$ \mathcal{N} = \Psi_{L} \circ \mathcal{A}_{l_{L},l_{L-1}} \circ \Psi_{L-1} \circ \mathcal{A}_{l_{L-1},l_{L-2}}\cdots \Psi_{1} \circ \mathcal{A}_{l_{1},l_{0}}$
 
-where $$\Psi_{k}\colon \mathbb{R}^{l_{k}} \to \mathbb{R}^{l_{k}}, k=1,\cdots,L$$ is a function on $\mathbb{R}^{l_{k}}$ (called the activation functions) and $$\mathcal{A}_{l_{k},l_{k-1}}\colon \mathbb{R}^{l_{k-1}} \to \mathbb{R}^{l_{k}}, k=1,\cdots,L$$ is affine linear transformation from $\mathbb{R}^{l_{k-1}}$ to $\mathbb{R}^{l_{k}}$. Explicitly, we write for all $$x\in \mathbb{R}^{l_{k-1}}$$ that 
+where $\Psi_{k}\colon \mathbb{R}^{l_{k}} \to \mathbb{R}^{l_{k}}, k=1,\cdots,L$ is a function on $\mathbb{R}^{l_{k}}$ (called the activation functions) and $$\mathcal{A}_{l_{k},l_{k-1}}\colon \mathbb{R}^{l_{k-1}} \to \mathbb{R}^{l_{k}}, k=1,\cdots,L$$ is affine linear transformation from $\mathbb{R}^{l_{k-1}}$ to $\mathbb{R}^{l_{k}}$. Explicitly, we write for all $$x\in \mathbb{R}^{l_{k-1}}$$ that 
 
 $$\mathcal{A}_{l_{k},l_{k-1}}(x) = W_{k}x + B_{k}$$
 
