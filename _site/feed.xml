@@ -5,8 +5,8 @@
     <description>Every failure is leading towards success.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 09 Nov 2020 22:43:24 +0100</pubDate>
-    <lastBuildDate>Mon, 09 Nov 2020 22:43:24 +0100</lastBuildDate>
+    <pubDate>Mon, 09 Nov 2020 23:06:08 +0100</pubDate>
+    <lastBuildDate>Mon, 09 Nov 2020 23:06:08 +0100</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
     
       <item>
@@ -56,6 +56,39 @@ ergodic control problem of fBM when no analytical solution is known or when the 
         <category>Mathematical finance</category>
         
         <category>Neural ntwork</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Solving PDEs without the curse of dimensionality</title>
+        <description>&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;In this paper, we strengthen the bound of the generalization error of empirical risk minimization (ERM) over deep neural network hypothesis classes without the constraint of the width of neural network and no further constraint is introduced in our bound. Beyond this main result in our paper, we present an explicit expression of the optimal solution of mathematical learning problem with quadratic loss in a general setting. Moreover, some detail argument are added in the proof of the covering number theorem for the deep neural network space.&lt;/p&gt;
+
+&lt;h2 id=&quot;main-result&quot;&gt;Main result&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/generalization/p5.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;settings&quot;&gt;Settings&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/generalization/p1.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;
+&lt;img src=&quot;/img/generalization/p11.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;
+&lt;img src=&quot;/img/generalization/p2.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;
+&lt;img src=&quot;/img/generalization/p3.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;
+&lt;img src=&quot;/img/generalization/p4.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;
+&lt;img src=&quot;/img/generalization/p45.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 15 Sep 2019 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/2019/09/15/Solving-PDEs-without-the-curse-of-dimensionality/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/09/15/Solving-PDEs-without-the-curse-of-dimensionality/</guid>
+        
+        <category>Neural network</category>
+        
+        <category>Mathematical Finance</category>
+        
+        <category>PDE</category>
         
         
       </item>
