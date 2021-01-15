@@ -5,9 +5,25 @@
     <description>Every failure is leading towards success.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 09 Nov 2020 23:06:08 +0100</pubDate>
-    <lastBuildDate>Mon, 09 Nov 2020 23:06:08 +0100</lastBuildDate>
+    <pubDate>Fri, 15 Jan 2021 09:55:57 +0100</pubDate>
+    <lastBuildDate>Fri, 15 Jan 2021 09:55:57 +0100</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>Interesting questions</title>
+        <description>&lt;h2 id=&quot;stationary-or-stationary-increment&quot;&gt;Stationary? Or stationary increment?&lt;/h2&gt;
+
+&lt;p&gt;I got a question from my friend: Why Brownian motion is stationary? I answered him without thinking: because independent increments only depend on time difference. However, immediately after I spoke out, I questioned myself: Wait, is Brownian motion really stationary? Of course not, how could &lt;script type=&quot;math/tex&quot;&gt;B_0&lt;/script&gt; equals to &lt;script type=&quot;math/tex&quot;&gt;B_1&lt;/script&gt; in distribution? What I had in mind is actually that Brownian motion has stationary increment. In our brain, it seems that Brownian motion is naturally linked with stationary but we should clarify to us that how they are linked in particularly.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 15 Jan 2021 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/2021/01/15/Interesting-questions/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021/01/15/Interesting-questions/</guid>
+        
+        <category>Interesting math</category>
+        
+        
+      </item>
     
       <item>
         <title>Ergodic control of fractional Brownian motion</title>
