@@ -181,7 +181,7 @@
   
     <li>
       <h2><a href="/2021/01/15/Interesting-questions/">Interesting questions</a></h2>
-      <p><h2 id="stationary-or-stationary-increment">Stationary? Or stationary increment?</h2>
+      <p><h2 id="matmul-in-tensorflow-and-numpy">Matmul in tensorflow and numpy</h2>
 
 </p>
     </li>
@@ -510,9 +510,13 @@ MultivariateNormal</p>
         </h2>
         
         <div class="post-content-preview">
-            Stationary? Or stationary increment?
+            Matmul in tensorflow and numpy
 
-I got a question from my friend: Why Brownian motion is stationary? I answered him without thinking: because independent increments only depend on time differe...
+I found that matrix multiplication in tensorflow and numpy are different.
+
+import numpy as np
+import tensorflow as tf
+a_tf = tf.random.normal([100,100],dtype = 'floa...
         </div>
     </a>
     <p class="post-meta">
