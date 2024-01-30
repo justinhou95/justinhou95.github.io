@@ -5,12 +5,20 @@
     <link>https://example.com/</link>
       <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     <description>SongyanHou</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 06 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_hu4e0c2ada1a36e108dd51f9398d94cea6_5758_512x512_fill_lanczos_center_3.png</url>
       <title>SongyanHou</title>
       <link>https://example.com/</link>
     </image>
+    
+    <item>
+      <title>Convergence of the Adapted Smoothed Empirical Measures</title>
+      <link>https://example.com/publication/smoothempiricalmeasure/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/smoothempiricalmeasure/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Mass splitting under adapted Wasserstein distance</title>
