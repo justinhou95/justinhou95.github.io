@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /blog/
-title: blog
+title: Blog
 nav: true
 nav_order: 1
 pagination:
@@ -17,19 +17,19 @@ pagination:
 ---
 
 <div class="post">
-
+<!-- 
 {% assign blog_name_size = site.blog_name | size %}
-{% assign blog_description_size = site.blog_description | size %}
+{% assign blog_description_size = site.blog_description | size %} -->
 
-{% if blog_name_size > 0 or blog_description_size > 0 %}
+<!-- {% if blog_name_size > 0 or blog_description_size > 0 %}
 
   <div class="header-bar">
     <h1>{{ site.blog_name }}</h1>
     <h2>{{ site.blog_description }}</h2>
   </div>
-  {% endif %}
+  {% endif %} -->
 
-{% if site.display_tags or site.display_categories %}
+<!-- {% if site.display_tags or site.display_categories %}
 
   <div class="tag-category-list">
     <ul class="p-0 m-0">
@@ -54,8 +54,8 @@ pagination:
       {% endfor %}
     </ul>
   </div>
-  {% endif %}
-
+  {% endif %} -->
+<!-- 
 {% assign featured_posts = site.posts | where: "featured", "true" %}
 {% if featured_posts.size > 0 %}
 <br>
@@ -99,7 +99,7 @@ pagination:
     </div>
     <hr>
 
-{% endif %}
+{% endif %} -->
 
   <ul class="post-list">
 
