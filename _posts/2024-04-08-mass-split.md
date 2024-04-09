@@ -20,7 +20,7 @@ $$
 \mathcal{AW}_1(\frac{1}{N}\sum_{n=1}^N \mu_n, \frac{1}{N}\sum_{n=1}^N \nu_n)  = 1-\varepsilon > \varepsilon = \frac{1}{N}\sum_{n=1}^N \mathcal{AW}_1(\mu_n, \nu_n).
 $$
 
-Conjecture: under some regularity conditions (quantified by $\epsilon$), we have 
+Conjecture: under some regularity conditions (quantified by $$\epsilon$$), we have 
 
 $$
 \mathcal{AW}_1(\frac{1}{N}\sum_{n=1}^N \mu_n, \frac{1}{N}\sum_{n=1}^N \nu_n) \leq \frac{1}{N}\sum_{n=1}^N \mathcal{AW}_1(\mu_n, \nu_n) + C_\epsilon.
