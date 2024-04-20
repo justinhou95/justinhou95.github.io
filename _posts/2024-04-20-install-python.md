@@ -11,7 +11,7 @@ related_posts: false
 I was running my machine learning project on a Linux server and needed to install Python 3.8 for some packages. I decided to install natively to keep everything under control, see this nice [blog](https://www.bitecode.dev/p/installing-python-the-bare-minimum). Without sudo right, things get a little different from standard installation but I found this nice [blog](https://www.bobbydurrettdba.com/2020/02/11/python-3-8-1-linux-install-without-root/) by Bobby Durrett making this super simple.
 
 
-- Download the python from [www.python.org](www.python.org)
+- Download the python from [www.python.org](https://www.python.org)
 
 ``` console
 [hous@ada-25:Downloads] $ wget https://www.python.org/ftp/python/3.8.18/Python-3.8.18.tgz
