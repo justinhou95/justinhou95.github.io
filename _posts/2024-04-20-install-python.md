@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Install Python on Linux without Sudo
-date: 2024-04-08 11:12:00-0400
+date: 2024-04-20 11:12:00-0400
 description: 
 tags: 
 categories:
