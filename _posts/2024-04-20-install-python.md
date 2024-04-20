@@ -8,7 +8,7 @@ categories:
 related_posts: false
 ---
 
-I was running my machine learning project on a Linux server and needed to install Python 3.9 for some packages. I decided to install natively to keep everything under control, see this nice blog on [bite code](https://www.bitecode.dev/p/installing-python-the-bare-minimum) explaining why. Without sudo right, things get a little different from standard installation but I found this nice [blog](https://www.bobbydurrettdba.com/2020/02/11/python-3-8-1-linux-install-without-root/) by Bobby Durrett making this super simple.
+I was running my machine learning project on a Linux server and needed to install Python 3.8 for some packages. I decided to install natively to keep everything under control, see this nice [blog](https://www.bitecode.dev/p/installing-python-the-bare-minimum). Without sudo right, things get a little different from standard installation but I found this nice [blog](https://www.bobbydurrettdba.com/2020/02/11/python-3-8-1-linux-install-without-root/) by Bobby Durrett making this super simple.
 
 
 - Download the python from [www.python.org](www.python.org)
@@ -34,8 +34,8 @@ Python-3.8.18/Makefile.pre.in
 ```
 
 - Check the absolute path of home directory
-- Make a directory called <code>.localpython3.8</code> (name it whatever you want) under home directory
-- Configured the Python make
+- Make a directory where you want to put your python. I called my <code>.localpython3.8</code> (name it whatever you want) and make it under the home directory.
+- Configured the Python make 
 
 ``` console
 [hous@ada-25:Python-3.8.18] $ pwd
@@ -73,14 +73,14 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 [hous@ada-25:~] $ 
 ```
-Perfect! Just to make life easier, we link <code>python3.8</code> to <code>python</code>
+Perfect! Just to make life easier, we go to <code>~/.localpython3.8/bin/</code> and link <code>python3.8</code> to <code>python</code>
 ``` console
 [hous@ada-25:Python-3.8.18] $ cd ~/.localpython3.8/bin
 [hous@ada-25:bin] $ ln -s python3.8 python
 [hous@ada-25:bin] $ ln -s pip3.8 pip
 [hous@ada-25:bin] $ 
 ```
-Now, we only need to type <code>~/.localpython3.8/bin/python</code>. Still a bit inconvenient, so next we add the folder path to PATH Variable (abundant nice tutorial online explaining this).
+Now, we only need to type <code>~/.localpython3.8/bin/python</code>. Still a bit inconvenient, so next we add the folder path to PATH variable (abundant nice tutorial online explaining this). This is not just for convenient but avoid you running the wrong python.  
 
 <code>export PATH=/u/hous/.localpython3.8/bin:$PATH</code> to <code>.bashrc</code> file.
 
@@ -114,6 +114,8 @@ setuptools 56.0.0
 [notice] To update, run: pip install --upgrade pip
 [hous@ada-25:~] $ 
 ```
+
+We are done! I usually then create a virtual environment and play with my machine learning codes, see [here](https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/) why venv is a good idea.
 
 
 
