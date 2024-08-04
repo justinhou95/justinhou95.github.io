@@ -1,4 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://justinhou95.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://justinhou95.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2024-07-15T09:39:44+00:00</updated><id>https://justinhou95.github.io/feed.xml</id><title type="html">blank</title><entry><title type="html">Install Python on Linux without Sudo</title><link href="https://justinhou95.github.io/blog/2024/install-python/" rel="alternate" type="text/html" title="Install Python on Linux without Sudo"/><published>2024-04-20T15:12:00+00:00</published><updated>2024-04-20T15:12:00+00:00</updated><id>https://justinhou95.github.io/blog/2024/install-python</id><content type="html" xml:base="https://justinhou95.github.io/blog/2024/install-python/"><![CDATA[<p>I was running my machine learning project on a Linux server and needed to install Python 3.8 for some packages. I decided to install natively to keep everything under control, see this nice <a href="https://www.bitecode.dev/p/installing-python-the-bare-minimum">blog</a>. Without sudo right, things get a little different from standard installation but I found this nice <a href="https://www.bobbydurrettdba.com/2020/02/11/python-3-8-1-linux-install-without-root/">blog</a> by Bobby Durrett making this super simple.</p> <ul> <li>Download the python from <a href="https://www.python.org">www.python.org</a></li> </ul> <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">[hous@ada-25:Downloads] $</span><span class="w"> </span>wget https://www.python.org/ftp/python/3.8.18/Python-3.8.18.tgz
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://justinhou95.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://justinhou95.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2024-08-04T15:10:38+00:00</updated><id>https://justinhou95.github.io/feed.xml</id><title type="html">blank</title><entry><title type="html">Best friends building Python package</title><link href="https://justinhou95.github.io/blog/2024/build-project/" rel="alternate" type="text/html" title="Best friends building Python package"/><published>2024-08-03T15:12:00+00:00</published><updated>2024-08-03T15:12:00+00:00</updated><id>https://justinhou95.github.io/blog/2024/build-project</id><content type="html" xml:base="https://justinhou95.github.io/blog/2024/build-project/"><![CDATA[<p>I’ve recently published a Python package. At least for me, I become more careful and comprehensive to the codes, once decided publishing the project. Immediately, I stand on the opposite an start questioning and criticizing every piece of codes. But I have to say this helps me improve the codes a lot. For example, in machine learning projects, I start thinking how flexible my structure could be adapted to other data and model. Publishing your codes if definitely something you want to try!</p> <blockquote> <p>“If I have seen further it is by standing on the shoulders of giants.” <br/> –Issac Newton</p> </blockquote> <p>There are fantastic already fantastic tools and pipelines which helps you build a robust, flexible, clean and beautiful project. In this post, I would like to introduce those friends of mine to you.</p> <h3 id="venv">venv</h3> <p>Python environments can drive one crazy. There are lots of nice tools but personally I prefer <code>venv</code> which is a standard library of Python. First you create a virtual enviroment with</p> <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>python3.9 <span class="nt">-m</span> venv .venv
+<span class="gp">$</span><span class="w"> </span><span class="nb">source</span> .venv/bin/activate
+</code></pre></div></div> <p>This creates a .venv folder to store your environment. You can gitignore it by adding <code>.venv/</code> to <code>.gitignore</code>. Now you can start managing your packages.</p> <ul> <li><a href="https://snarky.ca/how-virtual-environments-work/">How virtual environments work</a></li> <li><a href="https://github.com/github/gitignore/blob/main/Python.gitignore">gitignore template</a></li> </ul> <h3 id="pip--pip-tools">pip + pip-tools</h3> <p>Pip is also a standard library of Python which helps you manage your dependency. My practice is to use with pip-tools.</p> <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>python <span class="nt">-m</span> pip <span class="nb">install</span> <span class="nt">--upgrade</span> pip setuptools pip-tools
+</code></pre></div></div> <p>First you need a <code>.in</code> specifying the packages you need, e.g.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># requirements/train.in
+torch 
+seaborn
+...
+</code></pre></div></div> <p>Based on this file, piptools find a list of packages you need. You can output them in a <code>.txt</code> file.</p> <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>python <span class="nt">-m</span> piptools compile requirements/train.in <span class="nt">--output-file</span> requirements/train.txt
+</code></pre></div></div> <p>Now you have all the packages you need in the <code>.txt</code> file, e.g.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#
+# This file is autogenerated by pip-compile with Python 3.9
+# by the following command:
+#
+#    pip-compile --output-file=requirements/train.txt requirements/train.in
+#
+absl-py==2.1.0
+    # via ml-collections
+annotated-types==0.6.0
+    # via pydantic
+anyio==4.3.0
+...
+</code></pre></div></div> <p>At the end, we just need to install these packages from pip:</p> <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>python <span class="nt">-m</span> pip <span class="nb">install</span> <span class="nt">-r</span> requirements/train.txt
+</code></pre></div></div> <p>If you also integrate your package into environment in an <a href="https://setuptools.pypa.io/en/latest/userguide/development_mode.html">editable mode</a>, run</p> <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>python <span class="nt">-m</span> pip <span class="nb">install</span> <span class="nt">--editable</span> <span class="nb">.</span>
+</code></pre></div></div> <p>Just keep in mind that this requires you to <a href="https://setuptools.pypa.io/en/latest/userguide/quickstart.html">setup the package</a> first.</p> <p>Check the following blogs explaining why using native library:</p> <ul> <li><a href="https://www.bitecode.dev/p/why-not-tell-people-to-simply-use">Why not tell people to “simply” use pyenv, poetry, pipx or anaconda</a></li> <li><a href="https://www.bitecode.dev/p/back-to-basics-with-pip-and-venv">Back to basics with pip and venv</a></li> <li><a href="https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/">Boring Python: dependency management</a></li> </ul> <h3 id="folder-tree">folder tree</h3> <p>A good folder tree is also very useful managing your project. Here is how I order my stuff.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>projectname/
+├── .venv/
+├── dist/
+│   ├── projectname-1.0.0-py3-none-any.whl
+│   └── projectname-1.0.0.tar.gz
+├── notebooks/
+│   └── notebook.ipynb
+├── scripts/
+│   └── script.py
+├── data/
+│   └── data.npy
+├── src/
+│   └──packagename/
+│       ├── __init__.py
+│       └── subpackage/
+│           ├── __init__.py
+│           ├── subpackage.py
+├── tests/
+│   └── test_subpackage.py
+├── docs/
+│    └── Makefile
+├── .gitignore
+├── Makefile
+├── Dockerfile
+├── requirements/
+│   ├── dev-requirements.in
+│   ├── dev-requirements.txt
+│   ├── requirements.in
+│   ├── requirements.txt
+│ 
+├── pyproject.toml
+├── MANIFEST.in
+├── tox.ini
+├── LICENSE
+└── README.md
+</code></pre></div></div> <p>You probably already know what they are for by just google their names. Anyway, I would explain the files later when we meet them.</p> <ul> <li><a href="https://gist.github.com/Nivratti/ea81e952e07ffbbf03e6d44a7dbbef8f">directory-structure-deep-learning</a></li> </ul> <h3 id="vscode-pep8-black-flake8-isort-pylance">VScode, pep8, black, flake8, isort, pylance,</h3> <p>Already we have the environment and can code now! Here are some tools that helps you writing better code. I use VScode with the following extensions installed.</p> <ul> <li><code>pylance</code> helps <a href="https://code.visualstudio.com/docs/python/editing">writing codes faster</a></li> <li><code>pep8</code> and <code>flake8</code> helps <a href="https://code.visualstudio.com/docs/python/linting">linting Python codes</a></li> <li><code>black</code> and <code>isort</code> helps <a href="https://code.visualstudio.com/docs/python/formatting">formatting Python codes</a> You can easily installed them in the extensions market of VScode</li> </ul> <h3 id="pytest">pytest</h3> <p>After coding, you should always test your code before publishing. <a href="https://docs.pytest.org/en/stable/index.html#">Pytest</a> facilitate this. Writing test codes is very easy following the official tutorial and after that you only need to run</p> <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>python <span class="nt">-m</span> pytest
+</code></pre></div></div> <p>which output clean and clear test results:</p> <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">============================= test session starts ==============================
+platform darwin -- Python 3.9.13, pytest-8.2.2, pluggy-1.5.0
+rootdir: /Users/hous/Github/NeuralHedge
+configfile: pyproject.toml
+plugins: anyio-4.4.0
+collected 4 items                                                              
+
+tests/test_data.py ..                                                    [ 50%]
+tests/test_nn.py .                                                       [ 75%]
+tests/test_utils.py .                                                    [100%]
+
+=============================== warnings summary ===============================
+tests/test_nn.py::test_network
+  /Users/hous/Github/NeuralHedge/.venv/lib/python3.9/site-packages/torch/nn/modules/lazy.py:181: UserWarning: Lazy modules are a new feature under heavy development so changes to the API or functionality can happen at any moment.
+    warnings.warn('Lazy modules are a new feature under heavy development '
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================= 4 passed, 1 warning in 3.68s =========================
+</span></code></pre></div></div> <ul> <li><a href="https://www.obeythetestinggoat.com/book/preface.html">Obey the Testing Goat!</a></li> </ul> <h3 id="setuptools">setuptools</h3> <p>Now you are ready to publish your codes. I follow the pipelines:</p> <ul> <li><a href="https://packaging.python.org/en/latest/tutorials/packaging-projects/">Packaging Python Projects</a></li> <li><a href="https://setuptools.pypa.io/en/latest/userguide/index.html">User guide: setuptools</a></li> <li><a href="https://realpython.com/pypi-publish-python-package/">How to Publish an Open-Source Python Package to PyP</a></li> </ul> <p>Always check the latest tutorial! <code>pyproject.toml</code> is the new standardized format to describe project metadata declaratively, introduced with <a href="https://peps.python.org/pep-0621/">PEP 621</a>, but many projects are still using the <code>setup.py</code> approach.</p> <h3 id="tox">tox</h3> <p>With <a href="https://tox.wiki/en/latest/index.html">tox</a>, you can even test your codes in different environments. Simply write a configuration of tests and environments.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># tox.in
+[tox]
+env_list = py38, py39
+
+[testenv]
+deps = pytest
+command = pytest tests
+</code></pre></div></div> <p>Then <code>tox</code> would do everything for you</p> <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>tox
+<span class="gp">.pkg: _optional_hooks&gt;</span><span class="w"> </span>python /Users/hous/Github/NeuralHedge/.venv/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta
+<span class="gp">.pkg: get_requires_for_build_sdist&gt;</span><span class="w"> </span>python /Users/hous/Github/NeuralHedge/.venv/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta
+<span class="gp">.pkg: build_sdist&gt;</span><span class="w"> </span>python /Users/hous/Github/NeuralHedge/.venv/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta
+<span class="gp">py38: install_package&gt;</span><span class="w"> </span>python <span class="nt">-I</span> <span class="nt">-m</span> pip <span class="nb">install</span> <span class="nt">--force-reinstall</span> <span class="nt">--no-deps</span> /Users/hous/Github/NeuralHedge/.tox/.tmp/package/4/neuralhedge-0.1.0.tar.gz
+<span class="go">py38: OK ✔ in 4.98 seconds
+</span><span class="gp">py39: install_package&gt;</span><span class="w"> </span>python <span class="nt">-I</span> <span class="nt">-m</span> pip <span class="nb">install</span> <span class="nt">--force-reinstall</span> <span class="nt">--no-deps</span> /Users/hous/Github/NeuralHedge/.tox/.tmp/package/5/neuralhedge-0.1.0.tar.gz
+<span class="go">  py38: OK (4.98 seconds)
+  py39: OK (2.94 seconds)
+  congratulations :) (8.03 seconds)
+</span></code></pre></div></div> <h2 id="reference">Reference</h2> <p>This blog is greatly inspired by</p> <ul> <li><a href="https://www.samueldowling.com/2020/06/08/how-to-set-up-a-python-project-and-development-environment/">How to set up a python project and development environment</a></li> </ul>]]></content><author><name></name></author><summary type="html"><![CDATA[I’ve recently published a Python package. At least for me, I become more careful and comprehensive to the codes, once decided publishing the project. Immediately, I stand on the opposite an start questioning and criticizing every piece of codes. But I have to say this helps me improve the codes a lot. For example, in machine learning projects, I start thinking how flexible my structure could be adapted to other data and model. Publishing your codes if definitely something you want to try!]]></summary></entry><entry><title type="html">Install Python on Linux without Sudo</title><link href="https://justinhou95.github.io/blog/2024/install-python/" rel="alternate" type="text/html" title="Install Python on Linux without Sudo"/><published>2024-04-20T15:12:00+00:00</published><updated>2024-04-20T15:12:00+00:00</updated><id>https://justinhou95.github.io/blog/2024/install-python</id><content type="html" xml:base="https://justinhou95.github.io/blog/2024/install-python/"><![CDATA[<p>I was running my machine learning project on a Linux server and needed to install Python 3.8 for some packages. I decided to install natively to keep everything under control, see this nice <a href="https://www.bitecode.dev/p/installing-python-the-bare-minimum">blog</a>. Without sudo right, things get a little different from standard installation but I found this nice <a href="https://www.bobbydurrettdba.com/2020/02/11/python-3-8-1-linux-install-without-root/">blog</a> by Bobby Durrett making this super simple.</p> <ul> <li>Download the python from <a href="https://www.python.org">www.python.org</a></li> </ul> <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">[hous@ada-25:Downloads] $</span><span class="w"> </span>wget https://www.python.org/ftp/python/3.8.18/Python-3.8.18.tgz
 <span class="gp">Python-3.8.18.tgz   100%[===================&gt;</span><span class="o">]</span>  26.07M  <span class="nt">--</span>.-KB/s    <span class="k">in </span>0.1s    
 <span class="go">2024-04-20 12:36:05 (230 MB/s) - ‘Python-3.8.18.tgz’ saved [27337549/27337549]
 </span><span class="gp">[hous@ada-25:Downloads] $</span><span class="w"> 
