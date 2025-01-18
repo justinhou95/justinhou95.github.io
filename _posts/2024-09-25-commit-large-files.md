@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accidentally commit large files or sensitive data
-date: 2024-08-03 11:12:00-0400
+date: 2024-11-03 11:12:00-0400
 description: 
 tags: 
 categories:
