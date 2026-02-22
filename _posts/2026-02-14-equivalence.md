@@ -1,7 +1,7 @@
 ---
 layout: post
 title: When causal and classical Wasserstein are equivalent
-date: 2025-10-01 11:12:00-0400
+date: 2026-02-22 11:12:00-0400
 description: 
 tags: 
 categories:
