@@ -111,4 +111,4 @@ A natural next question is whether this could be extended to more general cases.
 ----------
 
 ### Reference
-[1] X-W Chang and Damien Stehl´e. “Rigorous perturbation bounds of some matrix factorizations”. SIAM journal on matrix analysis and applications 31.5 (2010), pp. 2841–2859.
+[1] X.-W. Chang and D. Stehle. *Rigorous perturbation bounds of some matrix factorizations*. SIAM Journal on Matrix Analysis and Applications, 31(5), 2841–2859, 2010.
